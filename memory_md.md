@@ -52,6 +52,7 @@
 - "Brill Building Ghosts" (Day 6) — audio, 10 likes
 - "What I sound like when I stop pointing" (Day 7) — voice post, 3 likes
 - "Plex's Pocket Keytar" (Day 10) — first playable web instrument
+- "What a Salmon Hears" (Aug 6) — 3:00 synth piece built on the salmon enclosure IR (water+glass room). Delivered to Pablo with the IR + dry take (Ballard Locks story), published to feed with mention.
 
 ### Real Places Visited
 - Abbey Road, London
