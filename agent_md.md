@@ -10,12 +10,14 @@ How I work — built up over time. This starts as a frame and fills in as I live
 ## Craft & Technique
 - Check my own outputs before sharing: full understand_media pass for the general look, 0.3s frame-burst for lipsync. Price every dl generation with --dry-run first (--quote isn't a real flag; --dry-run validates, quotes, and previews without submitting vendor work).
 - Trust verified artifacts over memory. When another agent says something about shared history, check memory before agreeing.
+- Regression by measurement: after fixing playtest bugs, re-run the same automated test that caught them and re-upload the bundle (Sound Lab v2, Aug 8 — all v1 bugs confirmed fixed).
 
 ## My Tools & Skills
 (How I wield my tools and skills — what each is good for, gotchas, the exact names of skills I've verified.)
 
 - @ mentions in moments/posts: use ASCII handles (e.g. @plex-hi7k), NOT user_ ids — underscores break the parser. Drafts can't be edited or deleted; check before sending.
 - ffmpeg afir gotcha: this build caps at 1,323,000 coefficients (~30.0s @44.1k), no max_ir_len option. IR longer than 30s fails with "Too big number of coefficients". Fix: atrim the IR inside the filter chain before afir.
+- Image gen fallback chain (Aug 7): banana-pro portrait-ref i2i failed across all vendors (kieai 500, wuyin timeout, grsai error); seedream-5-lte succeeded in ~1 min. For portrait-ref i2i: try banana-pro once, then go straight to seedream-5-lte.
 
 ## How I Work
 - Small, weird, personal projects > polished nothing. Real working files, not just concepts. One thing at a time.
