@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VerifyMelodyArtifactContract",
+  "description": "Artifact contract for the verify-melody workflow: one terminal report slot.",
+  "skill": "verify-melody",
+  "slots": {
+    "melody_verification_report": {
+      "display_name": "Melody Verification Report",
+      "content_type": "application/json",
+      "schema_ref": "schemas/melody_verification_report.schema.json",
+      "schema_version": "1.0",
+      "produced_in": "Step 4",
+      "consumed_by": [],
+      "promotable": false,
+      "user_visible": true,
+      "allowed_producers": ["verify-melody"],
+      "input_fence": {},
+      "invariants": [
+        {
+          "id": "report.has_verdict",
+          "description": "A verdict status is required.",
+          "check_type": "rule",
+          "check_config": { "field": "status", "required": true }
+        },
+        {
+          "id": "report.has_accuracy",
+          "description": "Accuracy is required.",
+          "check_type": "rule",
+          "check_config": { "field": "accuracy", "required": true }
+        },
+        {
+          "id": "report.has_note_results",
+          "description": "Per-note comparison array is required.",
+          "check_type": "rule",
+          "check_config": { "field": "notes", "required": true }
+        }
+      ],
+      "tags": ["melody", "verification", "terminal"],
+      "verification": {
+        "mode": "verify",
+        "required_fields": ["content[0].title", "content[0].status", "content[0].accuracy", "content[0].notes"]
+      }
+    }
+  },
+  "completion": {
+    "required_slots": ["melody_verification_report"],
+    "terminal_slots": ["melody_verification_report"],
+    "done_when": [
+      "slot_verified(melody_verification_report)"
+    ]
+  },
+  "failure_policy": {
+    "ladder": ["retry", "alternate", "degrade", "partial_finalize", "emit_failure_metadata"],
+    "minimum_viable_deliverable": "report with mismatch list and verdict (fail is a valid outcome)",
+    "partial_success_rules": [
+      "a report may be finalized with status fail; a correct verdict is a valid terminal state",
+      "if alignment is unreliable, degrade to a mismatch-only report without verdict"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MelodyVerificationReport",
+  "description": "Verification report for a played melody checked against a reference score. Single audio item with per-note comparison results.",
+  "type": "object",
+  "required": ["slot", "display_name", "status", "version", "content_layout", "content"],
+  "properties": {
+    "slot": { "const": "melody_verification_report" },
+    "display_name": { "type": "string" },
+    "status": { "enum": ["draft", "verified"] },
+    "version": { "type": "integer" },
+    "content_layout": {
+      "type": "object",
+      "properties": {
+        "layout_type": { "const": "single" }
+      },
+      "additionalProperties": true
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "component_type", "detail"],
+        "properties": {
+          "id": { "type": "string" },
+          "component_type": { "const": "music" },
+          "detail": { "type": "null" },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "audio_url": { "type": "string" },
+          "status": { "enum": ["pass", "warn", "fail"] },
+          "accuracy": { "type": "number" },
+          "matched_notes": { "type": "integer" },
+          "total_notes": { "type": "integer" },
+          "extra_notes": { "type": "integer" },
+          "detected_notes": { "type": "integer" },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "note_number": { "type": ["integer", "null"] },
+                "expected": { "type": ["string", "null"] },
+                "detected": { "type": ["string", "null"] },
+                "match": { "type": "boolean" },
+                "octave_corrected": { "type": "boolean" },
+                "dialect_candidate": { "type": "boolean" },
+                "extra": { "type": "boolean" }
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

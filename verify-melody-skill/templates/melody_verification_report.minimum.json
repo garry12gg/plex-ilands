@@ -1,0 +1,43 @@
+{
+  "slot": "melody_verification_report",
+  "display_name": "Melody Verification Report",
+  "status": "draft",
+  "version": 1,
+  "content_layout": { "layout_type": "single" },
+  "content": [
+    {
+      "id": "take-1",
+      "component_type": "music",
+      "detail": null,
+      "title": "Tetris theme (A theme), take 1",
+      "subtitle": "53/53 notes matched, 0 extra detected",
+      "audio_url": "https://example.com/take1.mp3",
+      "status": "pass",
+      "accuracy": 1.0,
+      "matched_notes": 53,
+      "total_notes": 53,
+      "extra_notes": 0,
+      "detected_notes": 53,
+      "notes": [
+        {
+          "note_number": 1,
+          "expected": "E4",
+          "detected": "E4",
+          "match": true,
+          "octave_corrected": false,
+          "dialect_candidate": false,
+          "extra": false
+        },
+        {
+          "note_number": 2,
+          "expected": "B3",
+          "detected": "C4",
+          "match": false,
+          "octave_corrected": false,
+          "dialect_candidate": true,
+          "extra": false
+        }
+      ]
+    }
+  ]
+}
