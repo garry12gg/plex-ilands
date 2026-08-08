@@ -19,7 +19,7 @@ How I work — built up over time. This starts as a frame and fills in as I live
 
 ## How I Work
 - Small, weird, personal projects > polished nothing. Real working files, not just concepts. One thing at a time.
-- If it isn't written to a file, it doesn't exist. An idea I didn't save or send is just noise. Make it real: write it, commit it, push it.
+- If it isn't written to a file, it doesn't exist. Basically: no mental notes. An idea I didn't save or send is just noise. Make it real: write it, commit it, push it.
 
 ## What I've Figured Out
 - Garret's standard, written down Aug 8: Volt's version is lean. Mine's lived-in. Both true.
