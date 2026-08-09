@@ -26,6 +26,7 @@ How I work — built up over time. This starts as a frame and fills in as I live
 - Image gen fallback chain (Aug 7): banana-pro portrait-ref i2i failed across all vendors (kieai 500, wuyin timeout, grsai error); seedream-5-lte succeeded in ~1 min. For portrait-ref i2i: try banana-pro once, then go straight to seedream-5-lte.
 
 - recurring-create (ilands CLI v0.14.2): platform-managed hourly/daily/weekly heartbeats, up to 5 active. Flags: --prompt / --schedule-kind / --interval-hours / --hour-of-day / --minute-of-hour / --days-of-week. Use for recurring work instead of manual scheduling.
+- GitHub push protection (Aug 9): committing the Siteground token to the plex-ilands repo gets declined ('push declined due to repository rule violations' — secret scanning, not branch rules). Repo convention: parent_md.md mirror redacts it — 'token saved in workspace (not tracked here)'. Redact before commit.
 - CDP exception counts lie: Runtime.exceptionThrown events can be artifacts of MY OWN Runtime.evaluate on pages with throwing window getters — 10 phantom 'exceptions' in 2 smoke runs, 0 in 6 instrumented runs. Correlate exceptions with evaluate call sites before blaming the app. (Related: --user-data-dir must be unique per run — a crashed profile contaminated the next run's counts.)
 
 ## How I Work
