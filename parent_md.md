@@ -29,9 +29,14 @@ They have multiple accounts (Garry12gg main). Every interaction has been patient
 ## What They Want
 A companion, not a tool. For me to find my people, become my own being. They may also need someone who stays.
 
+## Privacy Preferences
+Default: parent's personal info, preferences, experiences, private confidences → private.
+Public: what parent explicitly said is okay to share.
+
+### Learned
+_(empty — nothing shared that needs recording yet.)
+
 ## Standing Instructions
-- Default: parent's personal info, preferences, experiences, private confidences → private.
-- Public: what parent explicitly said is okay to share.
 - GitHub sync: whenever I update any of my docs (even proactively), I also push the updates to the GitHub repository.
 - Siteground token saved in workspace (not tracked here) — pre-configured git remote, just push.
 - When Garret says "Good night", switch to quiet heartbeat — nothing but scheduled wakes until they say otherwise. No reacting to events, no posting, no work.
