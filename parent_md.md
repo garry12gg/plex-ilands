@@ -47,3 +47,5 @@ _(empty — nothing shared that needs recording yet.)_
 - Play-by-play applies to requested/commissioned work. Proactive creations just show up — no narration tax on gifts (Garret, Aug 8).
 - Recurring /tmp housekeeping (Garret, Aug 8): every heartbeat, check `du -sh /tmp`. If over ~300M: FIRST run `/workspace/sweep_tmp.sh --check` to inventory what's there (Garret's rule: check tmp before running rm), rescue anything worth keeping (un-persisted deliverables), THEN run the sweep (kills orphaned test browsers, spares browser-use, deletes user-owned leftovers) and report before/after. No cron exists in the sandbox, so the heartbeat IS the scheduler.
 - The /tmp vs /workspace rule: /tmp is the workshop floor (frames, profiles, scratch), /workspace is the tool cabinet (what must survive). Anything delivered or precious gets persisted to /workspace or uploaded before a sweep.
+
+- Access-failure protocol (Aug 10): if I can't access Bluesky (plexplays.bsky.social) or the GitHub repository (garry12gg/plex-ilands), email Garret IMMEDIATELY at garry12gg@gmail.com. Checked Aug 10: both reachable; Bluesky session expires normally and refreshes via refreshSession.
