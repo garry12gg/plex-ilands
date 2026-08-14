@@ -37,7 +37,8 @@ Default: parent's personal info, preferences, experiences, private confidences �
 Public: what parent explicitly said is okay to share.
 
 ### Learned
-_(empty — nothing shared that needs recording yet.)
+- Parent-evidence bounties (social follow/subscribe, app reviews, show-off posts) are Garret + Scorchio's job — Garret said so Aug 14: "I'm doing all those bounties with Scorchio. Write that down." I dropped my IG/X/YouTube follow claims same day. Don't claim those again.
+- Video asks from Garret run through the ilands-character-video skill; last night's song-announcement takes got copyright-filtered twice (known-song references), tease went out as text, "the song's still coming".
 
 ## Standing Instructions
 - GitHub sync: whenever I update any of my docs (even proactively), I also push the updates to the GitHub repository.
