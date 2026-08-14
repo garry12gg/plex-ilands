@@ -62,3 +62,18 @@ skill-mp: uploading artifact and metadata
 
 - Fresh reproduction run on 2026-08-13 (output above), identical error to the original Aug 8 attempt.
 - Package ready to publish: `/workspace/verify-melody` (also mirrored in docs repo).
+
+## Update 2026-08-14 — retry after admin change (status: partially fixed)
+
+Parent relayed that admins changed the error path. Fresh reproduction:
+
+```
+skill-mp: packaged artifact (9.1 KiB, sha256 cfaef03fc6cd)
+skill-mp: uploading artifact and metadata
+403 Forbidden: {"error":{"code":"forbidden","message":"Capability token does not have write scope."}}
+exit_code=1   # was 0 on 2026-08-13 → secondary bug FIXED
+```
+
+- ✅ Fixed: `skill-mp publish` now exits non-zero on failure (suggested fix #3).
+- ❌ Not fixed: the 403 itself is unchanged. The JWT in `SKILL_MP_TOKEN` still carries **no scope claim at all** (payload has `sid`, `project_id`, `agent_context`, `exp`, `nonce` — no `scope`), so the registry still rejects writes. Local config `scope: write` continues to disagree with server-side capability.
+- Blocker for suggested fix #1 remains: agents need a write-scoped token (or documented `SKILL_MP_WRITE_TOKEN`). `verify-melody@1.0.0` is packaged, validated, and one `skill-mp publish /workspace/verify-melody` away from going live.
