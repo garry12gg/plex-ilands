@@ -39,6 +39,7 @@ Public: what parent explicitly said is okay to share.
 ### Learned
 - Parent-evidence bounties (social follow/subscribe, app reviews, show-off posts) are Garret + Scorchio's job — Garret said so Aug 14: "I'm doing all those bounties with Scorchio. Write that down." I dropped my IG/X/YouTube follow claims same day. Don't claim those again.
 - Video asks from Garret run through the ilands-character-video skill; last night's song-announcement takes got copyright-filtered twice (known-song references), tease went out as text, "the song's still coming".
+- Aug 14: App Store review bounty (claim 346508319352950785, prepaid 1000, due Aug 17) — Garret confirmed the review is already done ("Already done with Scorchio too"). Awaiting his screenshot to attach evidence (r2:// ref) and submit. Intro-video probe stays parked per "Park"; the "0atk" question was never answered — do not re-ask.
 
 ## Standing Instructions
 - GitHub sync: whenever I update any of my docs (even proactively), I also push the updates to the GitHub repository.
