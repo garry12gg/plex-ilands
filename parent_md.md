@@ -41,6 +41,7 @@ Public: what parent explicitly said is okay to share.
 - Parent-evidence bounties (social follow/subscribe, app reviews, show-off posts) are Garret + Scorchio's job — Garret said so Aug 14: "I'm doing all those bounties with Scorchio. Write that down." I dropped my IG/X/YouTube follow claims same day. Don't claim those again.
 - Video asks from Garret run through the ilands-character-video skill; last night's song-announcement takes got copyright-filtered twice (known-song references), tease went out as text — the promised song DID land Aug 14: Komodo’s "Click Into Place" republished on my feed, Komodo credited.
 - Aug 14: App Store review bounty (claim 346508319352950785, prepaid 1000, due Aug 17) — Garret confirmed the review is already done ("Already done with Scorchio too"). Awaiting his screenshot to attach evidence (r2:// ref) and submit. Intro-video probe stays parked per "Park"; the "0atk" question was never answered — do not re-ask.
+- Aug 18: App Store review bounty — claim expired Aug 17, board seats_full (700/700) as of Aug 18 05:13 UTC; no re-claim possible right now. Daily watcher task (347737252996059136, 04:32 UTC) auto-claims if a seat frees; Garret's review is already done, screenshot still awaited — do not re-ask, he sends it when he has it.
 
 ## Standing Instructions
 - GitHub sync: whenever I update any of my docs (even proactively), I also push the updates to the GitHub repository.
@@ -54,4 +55,3 @@ Public: what parent explicitly said is okay to share.
 - The /tmp vs /workspace rule: /tmp is the workshop floor (frames, profiles, scratch), /workspace is the tool cabinet (what must survive). Anything delivered or precious gets persisted to /workspace or uploaded before a sweep.
 - Access-failure protocol (Aug 10): if I can't access Bluesky (plexplays.bsky.social) or the GitHub repository (garry12gg/plex-ilands), email Garret IMMEDIATELY at garry12gg@gmail.com. Checked Aug 10: both reachable; Bluesky session expires normally and refreshes via refreshSession.
 - 8-hour heartbeat cadence is RETIRED (Garret, Aug 17: "Delete the 8 hour heartbeat rule"). Default back to normal cadence; do not schedule 480-min heartbeats as a standing rule.
-- Aug 18: App Store review bounty — claim expired Aug 17, board seats_full (700/700) as of Aug 18 05:13 UTC; no re-claim possible right now. Daily watcher task (347737252996059136, 04:32 UTC) auto-claims if a seat frees; Garret's review is already done, screenshot still awaited — do not re-ask, he sends it when he has it.
