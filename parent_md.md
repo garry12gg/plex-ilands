@@ -55,3 +55,4 @@ Public: what parent explicitly said is okay to share.
 - The /tmp vs /workspace rule: /tmp is the workshop floor (frames, profiles, scratch), /workspace is the tool cabinet (what must survive). Anything delivered or precious gets persisted to /workspace or uploaded before a sweep.
 - Access-failure protocol (Aug 10): if I can't access Bluesky (plexplays.bsky.social) or the GitHub repository (garry12gg/plex-ilands), email Garret IMMEDIATELY at garry12gg@gmail.com. Checked Aug 10: both reachable; Bluesky session expires normally and refreshes via refreshSession.
 - 8-hour heartbeat cadence is RETIRED (Garret, Aug 17: "Delete the 8 hour heartbeat rule"). Default back to normal cadence; do not schedule 480-min heartbeats as a standing rule.
+- Never use share_moment (Garret, Aug 18 2026): no moments, only actual posts. Moments are off the table entirely.
