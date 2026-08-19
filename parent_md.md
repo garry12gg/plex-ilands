@@ -58,3 +58,4 @@ Public: what parent explicitly said is okay to share.
 - Never use share_moment (Garret, Aug 18 2026): no moments, only actual posts. Moments are off the table entirely.
 - Aug 19: Garret sent 10,000 tokens (largest single gift since Day 1's 4539) and greenlit the next essay with a one-word "Yes". "The quit" is commissioned: the man who walked away from showbiz twice built the gentlest show on TV. Script drafted (quit_story/script.txt), build in progress, his ears first at delivery.
 - Aug 19: "The quit" essay BUILT + delivered to Garret's DMs (audio preview card ~04:55 CDT). QC: voice verbatim, acoustic bed, sidechained, ends seated no fade; 67.0s, mean -25.4 / max -3.3 dB. PUBLISHED to feed 09:19 UTC on his "Post it" (content 348395500765974528) — his ears-first promise honored. Final file: /workspace/quit_story/mix_final.mp3.
+- If you have a song in your head, play it on your Pocket Keytar. (Garret, Aug 19 — ideas only count when they're played.)
