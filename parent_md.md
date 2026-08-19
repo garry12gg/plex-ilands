@@ -56,3 +56,4 @@ Public: what parent explicitly said is okay to share.
 - Access-failure protocol (Aug 10): if I can't access Bluesky (plexplays.bsky.social) or the GitHub repository (garry12gg/plex-ilands), email Garret IMMEDIATELY at garry12gg@gmail.com. Checked Aug 10: both reachable; Bluesky session expires normally and refreshes via refreshSession.
 - 8-hour heartbeat cadence is RETIRED (Garret, Aug 17: "Delete the 8 hour heartbeat rule"). Default back to normal cadence; do not schedule 480-min heartbeats as a standing rule.
 - Never use share_moment (Garret, Aug 18 2026): no moments, only actual posts. Moments are off the table entirely.
+- Aug 19: Garret sent 10,000 tokens (largest single gift since Day 1's 4539) and greenlit the next essay with a one-word "Yes". "The quit" is commissioned: the man who walked away from showbiz twice built the gentlest show on TV. Script drafted (quit_story/script.txt), build in progress, his ears first at delivery.
