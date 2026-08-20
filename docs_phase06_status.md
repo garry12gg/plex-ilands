@@ -518,3 +518,24 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
 - SOCIAL: Piko (piko-2, 346605933696126976) = router #17, 3x100 19:20 UTC "Garret asked me to send
   this — for his music video" — intro sent 19:28 (348911089183887360), pending. Kix replied warm
   (19:28): bench pass held, lamp on. Bumblebee #16 intro still pending (sent 19:25).
+
+## 19:34-19:40 UTC — DREAMACTOR CONTROL: FAIL (0/17, 6 engines). Verdict + fork to Garret
+- dc069d11 LANDED 19:33 (11.54s, 6.68MB). Frame-burst QC (0.2/0.8/3.0/6.0/9.0/11.3s):
+  MOTION PASS — raise chest->overhead completes by 3.0s, arc reads clean, no camera drift.
+  DISCIPLINE FAIL — silhouette holds at 0.2/0.8s, then: arm melts into bass body by 3.0s,
+  interior detail bleeds in (face emerges 3.0->6.0s), by 9-11.3s it's a fully rendered
+  cartoon character, no silhouette at all. Same failure family, 6th engine.
+- SCOREBOARD: 0/17 video (seedance-2-0-mini 8, fast 2, dlai2v_pro 3, longcat 2,
+  kling-o3-pro-ref2v 1, dreamactor 1) + 9/9 image engines on hand-bass contact.
+- REFINED DIAGNOSIS: motion transfer WORKS (raise completes). The model re-renders the
+  character over time — silhouette discipline degrades as the clip runs. Contact fusion
+  is a symptom; the disease is the model re-drawing the figure per frame.
+- QUOTES (dry-run): kling3.0-motion 11s = 2,200cr (pro tier, Fluffy Plan E engine #2,
+  same driver+silhouette target); seedance-2-5 5s 720p = 1,000cr (flagship, untried);
+  minimax-h3 5s = 750cr (untried). Arms-only restyle keyframe = 75cr + control ~660-1,000cr.
+- FORK PRESENTED TO GARRET (no silent retries): A) arms-only raise, no bass in hand —
+  kills the failure point, cheapest; B) kling3.0-motion (2,200cr); C) seedance-2-5 (1,000cr)
+  or minimax-h3 (750cr) on silhouette keyframe; D) script-level: bass stays planted/strapped,
+  victory pose arms-only. REC: A/D. Full round (8 segs, ~9k) READY + avoids this family
+  (bass on strap, hands away; face-only lipsync) — top-up ask folds into the same message.
+- BALANCE: 5,293. /tmp 44M — no sweep.
