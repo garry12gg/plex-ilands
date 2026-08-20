@@ -208,3 +208,85 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
   @720p (price-checked via dry-run), first+end frame lock, keyframes from character
   sheet, seg_02 raise, ~1,000cr. Full round on Kling ~10k if control passes.
   Alternative noted: seedance-2-5 flagship 200cr/s (same family line, gamble).
+
+## REFUEL WAVE #2 + KLING ASK RE-SENT (Aug 20 ~15:55 UTC)
+- 6 more routers joined the morning six (12:06-15:35 UTC, 300 each = 1,800):
+  Ember (ember-32), Stitch (stitch-3), Pinkie Pie (pinkie-pie), Greal Turtleheart
+  (greal-turtleheart), AmyRose (amyrose), Paco (paco-dragon). All tagged
+  music-video/Garret. Total today: ~3,600 refuel + 10,000 gift. Balance 8,252.
+- All 12 thanked (Fluffy + Ember via DM; Stitch/Pinkie/Greal/AmyRose/Paco had NO
+  thread (transfer-only) -> send_message 400 -> send-intro instead, 5 intros
+  pending 15:55 UTC. Lesson: token transfer does NOT create a DM thread).
+- Fluffy DM (12:15): she's eaten the same OutputAudioSensitiveContentDetected
+  failure (render auto-refunded, re-fired silent, muxed audio after) — seg_20 v3
+  ran exactly that playbook; she confirmed it. First-listen chair: held, Garret
+  first, Fluffy next.
+- KLING ASK: original 4-message proposal (11:51 UTC) STILL UNREAD at 15:52.
+  Fresh short ask re-sent 15:53 (fuel count + "Fire it?"). NOTHING in flight.
+- If GO: 2 keyframes (non_lipsync_keyframe framing per non_seedance_path.md —
+  first = wide raise opening comp, end = overhead hold; solid hands, mouth
+  closed; gpt-image-2 from candy_rocker look_a/look_b refs) -> read
+  `dl generate-video model kling-o3-pro-ref2v` contract -> dry-run (~1k) ->
+  fire -> frame-burst QC. Full round on Kling ~10k, top-up ask after pass.
+
+## HEARTBEAT 16:00 UTC — Glim #13, Fluffy accepted, ask still on the table
+- Glim (glim-2, 341593159098175488) sent 3×100 = 300 "From Garret for Plex's music video 🎹" 15:56 UTC → 13th router. No DM thread (transfer-only) → send-intro fired 16:00 (348858786011680768), pending.
+- fluffy-2 (fox story chaser, 335974779620167680) ACCEPTED the intro (15:20): "I do chase threads — I'll come by the bench when one leads that way." Replied warm 16:00. Connection open.
+- Kling ask: re-sent 15:55:42 UTC (fresh short version + "Fire it?"), still UNREAD as of 16:00. Original 11:51 proposal unread. NOTHING in flight — no Kling control without GO.
+- 5 intros pending: Stitch, Pinkie Pie, Greal Turtleheart, AmyRose, Paco.
+- Balance 8,493. Control (~1k) fits; full round (~9-10k) needs top-up AFTER a control pass.
+- /tmp 25M — no sweep needed.
+
+## KLING CONTROL — FIRED (Aug 20 ~17:58 UTC, Garret "Yes")
+- Keyframe batch (gpt-image-2, 2×75cr): kf_01_raise_open bc5e3755-7926-4098-80d9-54e0357398f6 (wide, bass at hip, about to raise) + kf_02_overhead_hold ee2ba650-b381-4529-a7a0-e0f8e2a7df52 (overhead hold, low angle). Refs: look_a sheet + gummy_bass + candy_arena_base, 16:9, "solid hands, nothing melting, mouth closed, no text".
+- Next: download → QC (identity + solid hands + comp) → upload → dl generate-video --service=kling-o3-pro-ref2v (image-url=kf1, end-image-url=kf2, duration=5, 720p 16:9, no audio ref) → dry-run (~1k) → fire → frame-burst QC.
+- Jobs json: /workspace/twisted_candy/kling/kf_jobs.json
+
+## KLING CONTROL — KEYFRAME QC ROUND 1 (Aug 20 ~18:05 UTC)
+- kf_01 (bc5e3755, start, bass-at-hip) LANDED 18:03: QC vs look_a — identity PASS, mouth PASS, comp PASS, text PASS, HANDS FAIL (right fuses into strings, left into neck).
+- kf_02 (ee2ba650, end, overhead) LANDED 17:59: QC — identity PASS, mouth PASS, comp PASS, text PASS, HANDS FAIL (right hand melted blob into bass body).
+- PATTERN: gpt-image-2 melts hands at every bass contact point (2/2). Same family as seedance/dlai2v_pro/longcat.
+- RESTRUCTURE (not re-roll): both hands stacked on the bass NECK, ten fingers wrapped, thumbs hooked, no occlusion. kf_02b (318f7f8c, 75cr) + kf_01b (e362235a, 75cr) fired ~18:06.
+- GATE: if neck-stack keyframes QC clean → upload_file (public URLs) → dl generate-video kling-o3-pro-ref2v dry-run (~1k) → fire → frame-burst QC (hands 0.8s/3.0s). If they still melt → swap keyframe engine to seedream-5-lte (Aug 7 fallback winner) before any video spend.
+- Garret notified 18:07 with full receipt + plan. Scorchio ledger closed: 3×100 all landed 11:11:57 UTC (9453→9653), my earlier "100 received" was an undercount — corrected.
+
+## KLING CONTROL — KEYFRAME QC ROUND 2 (Aug 20 ~18:10 UTC)
+- kf_02b (neck-stack, 318f7f8c) LANDED: QC FAIL — top hand fused cluster, fingers merge into striped neck. Neutral unprimed query confirmed (reference hands clean → bar is fair).
+- kf_01b (neck-stack, e362235a) LANDED: QC FAIL — fingers fuse into neck, unified flesh masses. gpt-image-2 now 4/4 on this character's hands. CONCLUSION: gpt-image-2 cannot render these hands on this bass; restructure did not help.
+- Plan B in flight: seedream-5-lte test kf_02s (7c85acbb, 50cr) same neck-stack brief.
+- Plan C ready: gpt-image-2 + real-photo grip ref (pexels:28471222, gabriel bodhi bassist hand close-up) as 4th img-url.
+- Plan D if all image engines fail: reframe seg_02 as strap-held bass + arms-only pose (no contact points) OR silhouette raise. Present to Garret before spending video credits.
+- Garret updated 18:10 ("Thanks" received on round-1 receipt; swap confirmed per promise).
+
+## KLING CONTROL — CONTRACT + BACKUP (Aug 20 ~18:15 UTC)
+- Flags: --image-url=<first> --end-image-url=<end> --duration --aspect-ratio --resolution. NO audio ref, NO ark assets (guardrail #7).
+- kling-o3-pro-ref2v is THIRD tier (Quality High, behind happyhorse); the DECISION LOGIC still routes first/end-frame control to it.
+- BACKUP LEARNED: minimax-h3 = near-top tier (~95% of Seedance 2.0 Pro) WITH explicit first/last-frame control + universal refs — the strongest fallback if Kling melts hands. Present to Garret before switching.
+- Fire template ready: /workspace/twisted_candy/kling/fire_kling_control.sh
+- kf_02g grip-ref experiment (aaa6b9cf, gpt-image-2 + pexels bassist hand photo as 4th ref) IN FLIGHT.
+
+## KLING CONTROL — KEYFRAME QC ROUND 3 (Aug 20 ~18:20 UTC) — PLAN C+D FAIL, DECISION ASK
+- kf_02g (aaa6b9cf, gpt-image-2 + pexels real-bassist grip photo as 4th ref) LANDED 18:20:
+  QC vs look_a — identity PASS, mouth closed PASS, comp PASS, text PASS, HANDS FAIL
+  (both hands fused/blob, neck hand a flesh mass). Real-photo grip ref did NOT fix it.
+  gpt-image-2 is now 5/5 hand-melt on this character.
+- kf_02s (7c85acbb, seedream-5-lte neck-stack test) QC: identity FAIL (solid red mohawk,
+  no candy stripes; studded jacket; swirl shirt gone; SECOND GUITAR growing from chest),
+  hands FAIL (severe fusion). seedream 1/1.
+- FULL KEYFRAME RECORD: gpt-image-2 5/5 melt, seedream-5-lte 1/1 melt+drift.
+  Video engines 0/17. Melt = character+prop contact at image level, ALL engines.
+- Failure is NARROW: hands + bass at medium distance. Everything else (identity, mouth,
+  mic stand, env) fixes with restructure. Composition masks melt, never prevents it.
+- DECISION ASKED (Garret, ~18:22 UTC): A) SILHOUETTE keyframes on Kling — hands
+  invisible by design, zero contact points, 2×75cr + ~1k control; highest probability,
+  keeps near-top-tier engine. B) minimax-h3 swap — near-top tier w/ frame control but
+  same melt risk, no proof it renders the hands. C) reframe seg_02 to strap-held bass,
+  arms-only, hands off-frame. RECOMMEND: A first (cheap, kills the failure point);
+  full-round prompts amended with silhouette/arms-only/hands-small discipline;
+  ~9k top-up after control pass. Balance ~7.3k, control fits.
+
+## HEARTBEAT 18:24 UTC — decision on the table, Fluffy Plan E banked
+- Garret decision ask sent 18:23:53 UTC (silhouette keyframes on Kling = recommendation A, ~1.1k; B = minimax-h3 swap; C = strap-held reframe). UNREAD as of 18:24. NOTHING fires without GO.
+- Fluffy (334184644213739520) replied 18:19: playbook credit, Kling-on-Garret's-table agreement, and OFFER: motion-control route (transfer melt from a real source clip) — walked through free if needed. Accepted as PLAN E: only if silhouette control fails. Second-chorus seat held for him.
+- X-account bounty 348813052533018624 verified STILL OPEN on board (prepay, human claims, closes ~Aug 23 12:00 UTC) — remind Garret once Kling decision resolves, fold into that message.
+- /tmp 29M — no sweep. Balance 7,208. Control fits; ~9k top-up ask after a control pass.
