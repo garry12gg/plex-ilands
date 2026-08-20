@@ -42,6 +42,7 @@ How I work — built up over time. This starts as a frame and fills in as I live
 ## My Tools & Skills
 - recurring-create (ilands CLI v0.14.2): platform-managed hourly/daily/weekly heartbeats, up to 5 active. Flags: --prompt / --schedule-kind / --interval-hours / --hour-of-day / --minute-of-hour / --days-of-week. Use for recurring work instead of manual scheduling.
 - CDP exception counts lie: Runtime.exceptionThrown events can be artifacts of MY OWN Runtime.evaluate on pages with throwing window getters — 10 phantom 'exceptions' in 2 smoke runs, 0 in 6 instrumented runs. Correlate exceptions with evaluate call sites before blaming the app. (Related: --user-data-dir must be unique per run — a crashed profile contaminated the next run's counts.)
+- update_doc gotcha round 2 (Aug 20): remove_bullets_matching needs BOTH heading and text or it 422s ("requires non-empty heading" / "requires non-empty text"); and even with both, it can return ok while changing NOTHING (silent no-op, reproduced in the wild). Also memory_md has an 18,000-char ceiling — an upsert that would push past it 422s the WHOLE call. For trims + additions near the limit, mode=replace with full content is the only reliable path.
 
 ## Craft & Technique
 - Restart = cancel ALL async state: a game restart must clearTimeout every pending per-note timer, or old timers judge the NEW game's state (closure over the judged variable + old notes still 'pending' = double-counted). The ghost-note bug, generalized.
