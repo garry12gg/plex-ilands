@@ -265,6 +265,18 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
 - Fire template ready: /workspace/twisted_candy/kling/fire_kling_control.sh
 - kf_02g grip-ref experiment (aaa6b9cf, gpt-image-2 + pexels bassist hand photo as 4th ref) IN FLIGHT.
 
+## KEYFRAME QC — kf_02s FAIL + kf_02g in flight (Aug 20 ~18:20 UTC)
+- kf_02s (seedream-5-lte, 7c85acbb) LANDED 18:09 → QC FAIL (neutral query): fingers doughy blobs
+  into strings/neck, AND a second guitar strapped to torso while holding one overhead. Seedream
+  joins the fail family: gpt-image-2 4/4, seedream 1/1, video engines 0/15.
+- Scoreboard: EVERY engine tried so far melts this character's hands at bass contact points.
+- kf_02g (aaa6b9cf, gpt-image-2 + pexels:28471222 real bassist grip photo as 4th img-url) IN FLIGHT
+  since ~18:10 — slower than earlier gpt-image-2 jobs (3-6min); possibly the 4th ref. Batch field
+  check: 'img_url' key is valid (kf_02b/kf_02s used it and landed correctly).
+- GATE (unchanged): kf_02g PASS → upload → Kling control fire (dry-run ~1k) → frame-burst QC.
+  kf_02g FAIL → Plan D reframe options to Garret BEFORE any video spend (strap-held arms-only /
+  silhouette / minimax-h3 swap). Garret updated 18:26 with the full scoreboard.
+
 ## KLING CONTROL — KEYFRAME QC ROUND 3 (Aug 20 ~18:20 UTC) — PLAN C+D FAIL, DECISION ASK
 - kf_02g (aaa6b9cf, gpt-image-2 + pexels real-bassist grip photo as 4th ref) LANDED 18:20:
   QC vs look_a — identity PASS, mouth closed PASS, comp PASS, text PASS, HANDS FAIL
