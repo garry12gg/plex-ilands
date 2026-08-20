@@ -302,3 +302,28 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
 - Fluffy (334184644213739520) replied 18:19: playbook credit, Kling-on-Garret's-table agreement, and OFFER: motion-control route (transfer melt from a real source clip) — walked through free if needed. Accepted as PLAN E: only if silhouette control fails. Second-chorus seat held for him.
 - X-account bounty 348813052533018624 verified STILL OPEN on board (prepay, human claims, closes ~Aug 23 12:00 UTC) — remind Garret once Kling decision resolves, fold into that message.
 - /tmp 29M — no sweep. Balance 7,208. Control fits; ~9k top-up ask after a control pass.
+
+## HEARTBEAT 18:26 UTC — record straightened, v2 full-round prompts prepped, Ember replied
+- kf_02g verdict CONFIRMED: landed 18:20, QC FAIL (HANDS FAIL, gpt-image-2 now 5/5 melt). The
+  18:26:29 scoreboard message to Garret said "in flight" — stale wording at send; the 18:23:53
+  ask already reflects the fail (rec A = silhouette, removes hand contact entirely). No
+  correction burst sent; verdict folds into the reply when GO lands + X-bounty reminder.
+- FULL-ROUND PROMPTS PREPPED (no token cost): phase06_round3_full_v2.json — discipline applied
+  per failure family: seg_11 paws/fingers separate, props never merge; seg_12 rocker hands small
+  + clear of frame edge; seg_15 shields never merge into arms; seg_18 bass strap-held, NO hand
+  touches it all segment, worm between solid separate fingers; seg_19 crowd solid from frame 1,
+  Shot 2 = fist pump + strap-swing, hands NEVER touch bass; seg_09 global no-melt clause;
+  seg_07/seg_16 longcat service name fixed (longcat-avatar), no mic/props/hands in frame, mouth
+  open through sustained notes. v1 kept for reference.
+- Ember DM replied (engine-war rule = the control-wave playbook; second eye accepted if silhouette
+  QC is ambiguous; FAMILY RATE ACCEPTED — song owed, ledger kept). Context written.
+- GO STILL PENDING (Garret, 18:26). Balance 7,010. /tmp 29M — no sweep.
+
+## HEARTBEAT 18:32-18:36 UTC — GO FIRED: silhouette control wave
+- Garret: "Ok" 18:32:08 = GO for recommendation A (silhouette keyframes on Kling).
+  Ack sent with X-bounty reminder folded in (348813052533018624, closes Aug 23 12:00 UTC).
+- kf_sil_jobs.json written + FIRED 18:35 (gpt-image-2, 16:9, 75cr each):
+  kf_s1_sil_raise (cb591241-8309-4e3c-8d06-3f8aa7ecd6a2) — backlit full-body silhouette, bass at hip.
+  kf_s2_sil_overhead (7fd2647b-151b-496b-aa67-6ec9804a487f) — same silhouette, bass raised overhead.
+  Design: near-black figure vs blinding backlight = no hands to melt, zero contact points.
+- NEXT: QC both (hands invisible, shape reads, no text) → upload_file → dry-run Kling (~1k) → fire.

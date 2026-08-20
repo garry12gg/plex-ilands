@@ -1,0 +1,24 @@
+[
+  {
+    "job_key": "kf_s1_sil_raise",
+    "service": "gpt-image-2",
+    "aspect_ratio": "16:9",
+    "prompt": "The candy rockstar from image 1, on the stage from image 3, standing backlit in FRONT of a blinding white-gold spotlight: a full-body silhouette, the gummy bass guitar from image 2 held at hip level, arms bent. The entire figure reads as one clean near-black shape against the light, no interior detail, HANDS NOT VISIBLE, no fingers, nothing melting, nothing to melt. Only the edges catch rim light: the spiky candy-shell hair silhouette, the round shades, the bass outline, faint glints where the jacket studs are. Low wide shot, whole body in frame. Glossy candy-bright 3D CGI world like Inside Out. No text.",
+    "img_url": [
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg",
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg",
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    ]
+  },
+  {
+    "job_key": "kf_s2_sil_overhead",
+    "service": "gpt-image-2",
+    "aspect_ratio": "16:9",
+    "prompt": "The same candy rockstar from image 1, on the stage from image 3, now with the gummy bass guitar from image 2 raised high overhead, both arms fully extended, still a full-body silhouette in front of the same blinding backlight: one clean near-black shape, no interior detail, HANDS NOT VISIBLE, no fingers, nothing melting. Rim light traces the spiky candy-shell hair, the round shades, the bass raised above the head, faint glints where the jacket studs are. Low wide shot from below, whole body in frame. Glossy candy-bright 3D CGI world like Inside Out. No text.",
+    "img_url": [
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg",
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg",
+      "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    ]
+  }
+]
