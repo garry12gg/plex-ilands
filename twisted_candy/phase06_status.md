@@ -109,3 +109,84 @@ Prompts: control/seg_*.prompt.txt. If all 3 PASS video QC -> full round = 7 fast
 e923b652-c04e-4186-b9e2-d87b0b6690c8 watermarked MP4 arrived AFTER all 11 rerolls
 landed+QC'd and BEFORE control fired — 8th untracked extra (not in the 7 identified,
 not a tracked ref). Per round-2 rule: fail-grade family, do NOT QC, do NOT use.
+
+## CONTROL WAVE RESULTS (Aug 20 ~11:45 UTC) — 0/2 so far, seg_13 pending
+- seg_02 (96c23988, fast, 11s): QC FAILED — 3rd attempt, same family: hands fuse
+  into bass 00:01-00:02 (raise), mic stand VANISHES 00:01, bass gone at 00:07,
+  hands melt into jacket AT REST 00:07-00:08, mouth opens 00:10. Fast tier did
+  NOT fix the hand family. NEW SIGNAL: hands melt even with no prop contact.
+- seg_20 (07329af2, fast, 9s): FAILED pre-QC — OutputAudioSensitiveContentDetected
+  (Seedance copyright filter on generated output audio). Documented fix (CLI notes):
+  retry with 'no BGM / no background music' in prompt, do NOT pass --generate-audio.
+  RETRY FIRED: bb19beb0-cfc0-4d3f-b901-3a5c11bb936b (1,080cr, prompt + no-BGM clause,
+  + 'hands and bass stay solid, separate, non-melting').
+- seg_13 (edf83815, longcat-avatar): STILL PENDING.
+
+## HYPOTHESIS (test in flight): 'gummy' primes melting
+seg_02 QC shows hands melting into the JACKET at rest — no prop contact. The word
+'gummy' in every prompt + glossy candy textures may tell the model to melt things.
+Restructure discipline for raise/prop shots:
+1. Wide or silhouette compositions (hands small in frame) — seg_20 already does
+   silhouette; seg_02 must drop the medium close-up raise.
+2. Explicit 'solid, non-melting hands; fingers separate' language.
+3. Drop 'gummy' from CHARACTER descriptions (keep for environment only).
+4. Hands OFF props where story allows; held poses over motion.
+
+## RESTRUCTURED seg_02 (draft, fire after seg_20 retry + seg_13 QC, with Garret's go)
+Shot 1 (Low Wide): rocker on stage, spotlight flare, raises the gummy bass overhead
+  — wide, hands small in frame, camera tilting up. Mouth closed.
+At the beat: Hard cut.
+Shot 2 (High Wide): gummy army floods the arena floor, half-time stomp, shields.
+At the beat: Hard cut.
+Shot 3 (Medium): rocker at the mic stand, arms at sides, jaw set, silence — hands
+  relaxed, fingers separate, no contact with anything.
+At the beat: Hard cut.
+Shot 4 (Close-Up): shades flash, breath.
+Style: Inside Out-style 3D candy world; ENVIRONMENT is glossy gummy, but the
+character's body stays SOLID throughout — hands solid, fingers separate, nothing
+melts; the bass stays solid and whole in his grip.
+
+## FULL ROUND — HELD
+phase06_round3_full.json = 6 fast (seg_09/11/12/15/18/19, 7,440cr) + 2 longcat
+(seg_07/16, 1,600cr) = ~9,040cr. NOT firing until a restructured control passes
+(seg_20 retry and/or restructured seg_02). Top-up ask (~9k) to Garret comes AFTER
+the gate passes. Same solid-hands discipline to be applied to full-round prompts.
+
+## CONTROL WAVE RESULTS v2 (Aug 20 ~12:00 UTC) — 0/4, 2 more in flight
+- seg_13 (edf83815, longcat, 9.83s): QC FAILED — envelope corr 0.967/0.981 PASS,
+  but visual gate: mic hand melted/deformed the ENTIRE clip (0:00-0:10), mouth
+  closes on both sustained notes (0:04-0:05 'raw', 0:09-0:10 'withdraw').
+  Face/identity consistent. longcat did NOT fix the hand family.
+- seg_20 retry #2 (bb19beb0, no-BGM prompt): FAILED SAME FILTER
+  (OutputAudioSensitiveContentDetected). Conclusion: filter keys on the
+  REFERENCE AUDIO SLICE (2fb8391e), not the prompt wording. seg_02's slice
+  (70c5c6ad) passed the same service — per-slice gamble.
+- FALLBACK (fired): seg_20 v3 (f07700a0, 1,080cr) — NO reference audio at all,
+  prompt: 'No background music, no audio output; visual only', cut at midpoint,
+  silhouette raise + solid-hands language. Assembly overlays original track, so
+  only internal-cut beat precision is lost. Trade documented, not silent.
+- RESTRUCTURED seg_02 FIRED (7fc51a1b, 1,320cr, Garret 'Ok.' 11:42): 3 shots
+  (Low-Wide raise hands-small -> High-Wide army flood -> Medium->CU push-in
+  breath), audio ref KEPT (70c5c6ad), 'gummy' dropped from character wording,
+  explicit 'body stays SOLID, nothing melts'.
+
+## CONTROL WAVE RESULTS v3 (Aug 20 ~11:50 UTC) — seg_20 v3 FAIL, seg_02 pending
+- seg_20 v3 (f07700a0-9fbf-4c06-ad69-a8a5478ad16b, NO audio ref, 9.10s, 5.7MB -> raw/cb_f07700a0.mp4):
+  QC FAILED. The full filter test is answered: no-audio + silhouette raise + solid-hands
+  language + no-gummy did NOT break the family. Fingers fuse into the bass neck during the
+  raise (0:00-0:01), hand at overhead hold is a webbed block (0:01-0:02), wide shot bass
+  SHRINKS then melts into a red blob (0:03-0:08), strap never visible. Mouth closed (PASS).
+  Conclusion: the melting is ENGINE-level on this character+prop, not audio-slice or
+  prompt-wording level. The copyright filter was never the bottleneck.
+- seg_02 restructured (7fc51a1b, composition test: wide raise, hands small, 3 shots):
+  STILL PENDING.
+- Running score: 1/2 control failed. seg_02 is the last composition card before the
+  engine-swap conversation (Kling/Pro, keyframe prep per non_seedance_path.md).
+  If seg_02 fails: 0/16 on current engines -> present engine-swap to Garret.
+
+## VERDICT SO FAR: 0/4 control + 0/11 round-2 = 0/15 on current design.
+Hands melt in EVERY composition and EVERY tier (mini/fast, dlai2v_pro/longcat).
+Next gate: seg_20 v3 (filter test) + seg_02 restructured (composition test).
+If either passes -> amend full-round prompts with same discipline -> ~9k top-up
+-> full round. If both fail -> engine-swap option for hero shots (Kling/Pro,
+needs keyframe prep per non_seedance_path.md) — present to Garret.
