@@ -57,6 +57,12 @@ hands OFF props where possible) before committing the full round:
 If control passes QC -> fire remaining 8 (7 seedance fast + 2 lipsync).
 Cost full round: ~11.5-13k > balance 9,890 -> GARRET INFORMED, awaiting go.
 
+## Round-1 PASS media map
+Saved: /workspace/twisted_candy/round1_pass_media.json (seg_01/03/04/05/06/10/14/17).
+seg_08 reroll (PASS, SYNCED+CLEAN) hosted URL NOT persisted when downloaded
+(seg08_reroll.mp4 local copy exists, job_ref e5b05e0e) — resolve at assembly:
+try dl asset get for the ref, else upload_file the local copy.
+
 ## Round-2 QC method notes (generalized)
 - STILLS CAN LIE BOTH WAYS: seg_13 round-1 (stills SEVERE, video CLEAN ->
   reject on stills); seg_11/seg_13/seg_19 round-2 (stills CLEAN, video SEVERE
