@@ -476,3 +476,22 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
 - BALANCE: 6,154 + 600 inbound (Poppy 3x100 "pocketfuls for the road" 19:01;
   Bumblebee 3x100 "Tip from Garret" 19:04) = ~6,754 before 75cr retry. Full round ~9k
   STILL HELD; top-up ask only after a control PASS.
+
+## 19:26-19:31 UTC — kf_s3 retry #2 QC: CLOSER, still FAIL; RETRY #3 FIRED (bass ref dropped)
+- Retry #2 (653762a1, 75cr) LANDED 19:26. QC vs sil_t0_0: FAIL but failure family CHANGED:
+  - POSE NOW CORRECT: bass HORIZONTAL across chest, arms bent at elbow, waist-up ✓ (pose lock worked)
+  - REMAINING: (1) figure CENTERED vs driver left-of-center (spatial mismatch for transfer),
+    (2) FRET BANDS on bass neck break the solid silhouette (interior detail leak),
+    (3) jacket studs catch light inside the shape.
+  - No melting ✓. The gummy bass ref (a42cfd45, candy-cane striped neck) is the stripe source.
+- RETRY #3 FIRED 19:31 UTC: 5ddb8b5b-bf36-4452-bf2a-d15a161bfdf1 (gpt-image-2, 75cr, 16:9).
+  Changes: (1) DROPPED a42cfd45 (gummy bass ref = fret contamination), (2) explicit
+  "character positioned in the LEFT half of the frame, off-center to the left, exactly
+  like the reference photo", (3) "bass solid dark, NO fret bands, NO stripes, NO interior
+  detail ANYWHERE on figure or instrument, only the OUTER EDGE catches rim light".
+  Refs: sil_t0_0 (0099bc19) + 2161cc2c + f3b75a2a only.
+- NEXT (callback): QC retry #3 vs sil_t0_0 -> PASS: upload -> dreamactor dry-run (~1.3k)
+  -> fire (--video-url=pub...1787252373544-112e7319-...drive_raise_trim.mp4
+  --image-url=<kf> --cut-first-second --duration=11). FAIL: present Kling Pro keyframe
+  option to Garret per promise (no more silent retries past this one).
+- SPEND: 75+75+75 = 225cr keyframes. Balance ~6.5k. Full round ~9k HELD.
