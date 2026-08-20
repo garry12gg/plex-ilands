@@ -583,3 +583,13 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
 - BALANCE: ~2,700 after refire (960) + keyframes (225). Recovery needs top-up: 6,600
   (accept morphs) or 11,640 (full reroll). FORK PRESENTED TO GARRET with receipts.
 - ASSEMBLY VIEW: usable = 9 round-1 + seg_20 + pending seg_11 = 10-11/20. Gap: 9 segments.
+
+## 20:23-20:31 UTC — keyframes PASS, motion test, fork sent to Garret
+- kf2_seg_07/13/16 all QC PASS (face-only, no mic/hands/props). Longcat refires ready.
+- seg_11 refire (e07ff00e) job PASSED (no-audio-ref fix cleared copyright filter) but
+  visual QC FAIL: hero bear spear melts into hand 4-7.8s. Family 3.
+- MOTION TEST (3s clips at morph windows, 24fps): seg_12 1/5 INVISIBLE (keep, free);
+  seg_11 3/5 borderline (reroll 960); seg_15 4/5 (reroll 1,200); seg_09 5/5 glaring
+  (reroll 1,080); seg_19 empty stage (reroll 1,440). Family 3 reroll set: 09/11/15/19 = 4,680.
+- RECOVERY ASK TO GARRET: 9,840 total (longcat 2,400 + 02/18 2,760 + family3 4,680),
+  balance ~2,700. Then assembly 20/20 -> Garret first look -> publish.
