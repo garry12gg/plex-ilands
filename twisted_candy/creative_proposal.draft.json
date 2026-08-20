@@ -1,0 +1,233 @@
+{
+  "logline": "A candy rockstar sings the war in his head to an arena of gummy bears, until the rebellion he keeps declaring dead steps off the screen and wins anyway.",
+  "brief": "**核心母题 (Core Motif)**: The gummy rebellion — a candy kingdom at war with itself (sweet vs sour), and the only way to win the war in your head is to play it like a show. One image carries the whole piece: the sour worm's coil — it snaps, tangles, burrows under the skin, and in the end gets eaten.\n\n**视觉世界与气质 (Visual World)**: High-saturation neon candy palette — bubblegum pink, toxic sour green, candy-corn yellow, midnight-purple shadows. Glossy plastic-gummy textures, chocolate-mud ground, arena spotlights cutting through sugar-dust haze. Style anchors: 90s candy commercials blown up to arena scale; the bold toy-world lighting of early Pixar shorts; pop-punk album-cover maximalism. Tone: euphoric, bold, zero irony — the fun is played completely dead straight.\n\n**人物表 (Characters)**:\n- **The Candy Rocker**: stylized cartoon candy rockstar — spiky two-tone candy-shell hair (red and blue swirls), glossy cherry-red jacket with black button studs, round black shades, sharp confident grin. Half action-figure, half frontman; sings with total conviction. The only performer who ever faces the camera.\n- **The Gummy Army**: cheerful, slightly dented gummy-bear soldiers in mismatched armor — marshmallow shields, candy-cane spears. They lose ground all song, then win by turning the war into a dance.\n- **The Little Bear**: a dented runt of the Gummy Army who refuses to retreat — the army's heart, the one who turns the tide.\n- **Sour Worms**: neon-green sour gummy worms, glossy and elastic, endless; they coil, tangle, swarm, and burrow — the sour army of the war in the head.\n- **The Sugar Cloud**: a dark purple storm cloud made of crystallized sugar that looms over the battlefield and rains glitter-dust; it darkens all song and breaks bright at the end.\n\n**场景 (Locations)**:\n- **The Candy Arena**: the performance space — a giant arena whose interior is a crumpled candy wrapper; a gummy stage shaped like a bitten candy bar; confetti cannons; a crowd of Gummy Army bears. The Arena Screen, a giant candy-wrapper screen above the stage, live-casts the battlefield — it is how the performance layer watches the narrative layer.\n- **The Candy Battlefield**: the narrative space — a war-torn candy kingdom: broken candy-cane pillars, chocolate-mud trenches, sour-worm tunnels, the Sugar Cloud hanging above.\n- **The Mouth Arena**: the war in his head — the inside of a giant cartoon mouth: candy-corn teeth, a lollipop tongue, a gumdrop uvula. Appears when the lyrics go inside the body.\n\n**记忆点 (The One Shot)**: The Candy Rocker on a candy-cane pillar mid-battlefield, gummy bass raised overhead, sour worms swirling around him like a storm, arena spotlights cutting through sugar dust. It returns three times and upgrades each time — the final version is the last frame.\n\n**线与复线 (Lines & Sublines)**: Main line — the rebellion: the sweet army vs the sour worms, escalating from skirmish to full war, each chorus a bigger clash. Subline — the Sugar Cloud: it darkens as the war worsens and breaks bright when the war ends. Visual rhyme — the worm's coil: arena cables, battlefield trenches, the final bite.\n\n**Hybrid 组合: 叙事 60% / 演唱 40%** — narrative layer: the candy kingdom's war, told in the lyrics' images (coiling, tangling, burrowing, the battle in the mouth). Performance layer: The Candy Rocker plays the arena, singing the rebellion like an anthem, watching the war on the Arena Screen. Relationship between layers: the Rocker narrates the war from the stage; the convergence moment comes at the final chorus, when he steps off the Arena Screen onto the battlefield and leads the charge himself.\n\n**叙事 synopsis**: The sweet army is losing to the sour worms; the war is in the head of the one who can't stop eating candy (起). The worms overrun the battlefield; the army retreats (承). The Little Bear turns back, the army rallies, and the rebellion that 'feels so dead' charges anyway (转). The Rocker steps off the screen into the war, the worms hesitate, the cloud breaks, and the war becomes a party — then he eats the last worm (合).\n\n**Ending**: no cut to black. The final image holds on the Rocker's raised-bass pose as the lights go down around him, matching the riff's own deliberate fade.\n\n**画面与歌词 (Visuals vs Lyrics)**: mostly parallel — the lyrics' images get built literally and then upgraded (coiling worms become real; 'war in my head' becomes the Mouth Arena; 'rebellion feels so dead' becomes a punchline the Rocker laughs at).",
+  "segments": [
+    {
+      "id": "seg_01",
+      "start_time": 0,
+      "end_time": 9,
+      "duration": 9,
+      "description": "The Candy Arena in the dark. Spotlights snap on one by one, tracking to an empty gummy stage shaped like a bitten candy bar. The Candy Rocker strides out of the shadows, bass slung low, as confetti cannons fire a dry volley — the riff locking in like a count-in.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_d43dbd69-99b.mp3"
+    },
+    {
+      "id": "seg_02",
+      "start_time": 9,
+      "end_time": 19.73,
+      "duration": 10.73,
+      "description": "The Candy Rocker reaches the mic and raises his gummy bass overhead; the crowd of Gummy Army bears pours onto the arena floor, stomping half-time. He plants the bass, grips the mic stand, and leans into it — the last beat of silence before the first line.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_70c5c6ad-5d1.mp3"
+    },
+    {
+      "id": "seg_03",
+      "start_time": 19.73,
+      "end_time": 29.2,
+      "duration": 9.47,
+      "description": "The Candy Battlefield at night. Sour Worms coil around broken candy-cane pillars and snap like whips as the first line hits; the Gummy Army forms a shaky shield line with marshmallow shields. A worm's coil tightens around a pillar until it cracks — sugar dust exploding.",
+      "lyrics": "Coiled in colors snapping my bite / Teeth sinking deep chaos ignite",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_936c4072-cd3.mp3"
+    },
+    {
+      "id": "seg_04",
+      "start_time": 29.2,
+      "end_time": 38.27,
+      "duration": 9.07,
+      "description": "The Candy Rocker sings straight into the arena mic, mid-close, face and mouth clearly visible, round shades flashing with stage lights. He grips the stand with both hands and throws his head back on the last word, the crowd roaring.",
+      "lyrics": "Sugary rage tangles in my veins / Sour explosions drive me insane",
+      "lipsync": true,
+      "model": "dlai2v_pro",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_a5dcc9b8-3ed.mp3"
+    },
+    {
+      "id": "seg_05",
+      "start_time": 38.27,
+      "end_time": 48.43,
+      "duration": 10.16,
+      "description": "Two scenes: ① The Mouth Arena — the war in his head: inside a giant cartoon mouth, gummy-bear soldiers march across a lollipop tongue between candy-corn teeth; ② the battlefield — a sour worm twists up a chocolate-mud trench. The worm's coil rhymes with the tongue's swirl.",
+      "lyrics": "Wriggle and twist acid on my tongue / A battle in my mouth just begun",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_0ecfd207-1d9.mp3"
+    },
+    {
+      "id": "seg_06",
+      "start_time": 48.43,
+      "end_time": 57.1,
+      "duration": 8.67,
+      "description": "The Sugar Cloud darkens overhead and rains glitter-dust as the battlefield's candy begins to melt; the Gummy Army's shields sag gooey. A sour worm arches over the fallen candy-cane pillars, triumphant, while the army's banner droops.",
+      "lyrics": "Twisted shapes screaming in sweet decay / Nemesis candy melting away",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_2c6b7491-a56.mp3"
+    },
+    {
+      "id": "seg_07",
+      "start_time": 57.1,
+      "end_time": 66.73,
+      "duration": 9.63,
+      "description": "The Candy Rocker on the arena stage, singing the worm hook to camera, face and mouth clearly visible; behind him the Arena Screen fills with sour worms swarming the battlefield. He claws the air as if pulling something from under his skin, the crowd surging forward.",
+      "lyrics": "Sour worms pulling me under the skin / Twisting my mind can't tell where to begin",
+      "lipsync": true,
+      "model": "dlai2v_pro",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_58d953cc-d6a.mp3"
+    },
+    {
+      "id": "seg_08",
+      "start_time": 66.73,
+      "end_time": 78.33,
+      "duration": 11.6,
+      "description": "Full-belt chorus close-up: the Candy Rocker grips the mic stand, shades off now, face and mouth clearly visible, sweat-glossy; he half-laughs on the last line — the rebellion's defeat delivered like a punchline that lands. Confetti cannons fire a sad little burst.",
+      "lyrics": "Sweet and sharp a war in my head / This gummy rebellion feels so dead",
+      "lipsync": true,
+      "model": "dlai2v_pro",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_48fe9c12-57d.mp3"
+    },
+    {
+      "id": "seg_09",
+      "start_time": 78.33,
+      "end_time": 86.69,
+      "duration": 8.36,
+      "description": "The battlefield after the chorus: sour worms overrun the trenches, the Sugar Cloud sinking low; the Gummy Army retreats in slow, glossy defeat, dragging marshmallow shields. One dented little bear stops and turns back, jaw set.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_644da710-1c0.mp3"
+    },
+    {
+      "id": "seg_10",
+      "start_time": 86.69,
+      "end_time": 95.67,
+      "duration": 8.98,
+      "description": "The Little Bear stands its ground as worms circle; then the rest of the Gummy Army turns around, one by one, and walks back into formation behind it. The Sugar Cloud rumbles — a decision being made in the dark.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_6115d3ca-490.mp3"
+    },
+    {
+      "id": "seg_11",
+      "start_time": 95.67,
+      "end_time": 103.37,
+      "duration": 7.7,
+      "description": "The Gummy Army charges the worm trenches with candy-cane spears; the Little Bear leads. Sour worms burst like pinatas on impact, and for the first time the army laughs mid-charge. The Sugar Cloud glowers overhead.",
+      "lyrics": "Grapple with demons they're small but loud / Circles of sugar form this dark cloud",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_b025f23c-ae3.mp3"
+    },
+    {
+      "id": "seg_12",
+      "start_time": 103.37,
+      "end_time": 113.5,
+      "duration": 10.13,
+      "description": "The worms strike back: a coil snatches the Little Bear's spear; sticky vengeance — sugar-glue webs stick the army's feet to the chocolate mud. The Candy Rocker watches from the Arena Screen above, knuckles white on the bass neck.",
+      "lyrics": "Sticky vengeance clutches to my core / Each flavor hits like a kick never pure",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_5150d742-031.mp3"
+    },
+    {
+      "id": "seg_13",
+      "start_time": 113.5,
+      "end_time": 123.33,
+      "duration": 9.83,
+      "description": "The Candy Rocker sings the punishment verse, face and mouth clearly visible, arena lights dimmed to a single sour-green spot; he bites his own knuckle on the first line and shakes out the sting. The crowd is silent, holding.",
+      "lyrics": "Every bite feels like punishment raw / Jaws cracking down till my senses withdraw",
+      "lipsync": true,
+      "model": "dlai2v_pro",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_0ec2575d-52f.mp3"
+    },
+    {
+      "id": "seg_14",
+      "start_time": 123.33,
+      "end_time": 132.67,
+      "duration": 9.34,
+      "description": "Back inside the Mouth Arena: the war in his head — sour worms tangle around the lollipop tongue, the gumdrop uvula swinging; candy-corn teeth clench and unclench like a heartbeat. The Little Bear scales a tooth to look out and sees the battlefield beyond.",
+      "lyrics": "But I can't stop this tangled addiction / A gummy curse built on contradiction",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_4e3ddf31-339.mp3"
+    },
+    {
+      "id": "seg_15",
+      "start_time": 132.67,
+      "end_time": 142.43,
+      "duration": 9.76,
+      "description": "The final charge: the Gummy Army hits the worm horde at full tilt, candy-cane spears and marshmallow shields, the Sugar Cloud boiling above. The Little Bear is lifted on the army's shoulders, pointing forward — the rebellion, suddenly, is anything but dead.",
+      "lyrics": "Sour worms pulling me under the skin / Twisting my mind can't tell where to begin",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_f94ba2e9-0c2.mp3"
+    },
+    {
+      "id": "seg_16",
+      "start_time": 142.43,
+      "end_time": 154,
+      "duration": 11.57,
+      "description": "Convergence: the Candy Rocker steps off the Arena Screen and onto the battlefield, real, bass in hand, face and mouth clearly visible, singing the last chorus into the war itself. The Gummy Army parts for him; he walks to the front line, belts the final line, and the worms hesitate.",
+      "lyrics": "Sweet and sharp a war in my head / This gummy rebellion feels so dead",
+      "lipsync": true,
+      "model": "dlai2v_pro",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_d68d4b94-cec.mp3"
+    },
+    {
+      "id": "seg_17",
+      "start_time": 154,
+      "end_time": 164.64,
+      "duration": 10.64,
+      "description": "The hesitation breaks: sour worms scatter and burst into glitter; the Sugar Cloud splits open and rains bright candy. The Gummy Army celebrates, tossing marshmallow shields; the Candy Rocker stands at the front line, watching the sky clear, breathing.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_1b61032b-da0.mp3"
+    },
+    {
+      "id": "seg_18",
+      "start_time": 164.64,
+      "end_time": 176.42,
+      "duration": 11.78,
+      "description": "The Candy Rocker walks the quieting battlefield alone and picks a last sour worm out of the mud. He examines it — small, shiny, ridiculous — then pops it into his mouth and chews, deadpan, as the army watches. A beat. He grins.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_ad85ef4d-8ff.mp3"
+    },
+    {
+      "id": "seg_19",
+      "start_time": 176.42,
+      "end_time": 188.18,
+      "duration": 11.76,
+      "description": "Back in the Candy Arena: the full Gummy Army crowd stomps half-time, confetti cannons firing for real now; the Candy Rocker on stage plays the riff, the worm-coil cable of his bass swinging. Sugar dust settles like snow.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_055ee351-0a2.mp3"
+    },
+    {
+      "id": "seg_20",
+      "start_time": 188.18,
+      "end_time": 196.96,
+      "duration": 8.78,
+      "description": "The ending holds: the Candy Rocker alone on the gummy stage, one last chord ringing, arena lights dimming around him. He raises the bass overhead and the frame holds as the riff fades on its own — the lights go down on the pose, no blackout.",
+      "lyrics": "-",
+      "lipsync": false,
+      "model": "seedance-2-0-mini",
+      "audio_url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_2fb8391e-642.mp3"
+    }
+  ],
+  "slot": "creative_proposal",
+  "mv_type": "hybrid",
+  "tone_mood": "euphoric, bold, high-saturation: neon candy-brights with a sour dark undertow; arena-scale rock energy, zero irony — the fun played dead serious",
+  "model_primary": "seedance-2-0-mini",
+  "visual_instructions": "Stylized cartoon/toy-render aesthetic only — no photoreal humans, no real-world brands, no gore (sour-dark but playful). Performances played completely straight, zero irony. High-saturation neon candy palette, arena-scale energy. The worm-coil motif recurs (arena cables, trenches, the final bite).",
+  "music_url": "https://public.ilands.ai/materials/user_user_3HHI5A5nAlKkMkLx4ck8pFkHSUZ/agent_341632920605167616/2026/08/20/6c7c8bc9-21e4-4d14-8300-b000e0cbe049-Twisted-Candy.mp3",
+  "total_duration": 196.96
+}

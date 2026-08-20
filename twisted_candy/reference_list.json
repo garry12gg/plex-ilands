@@ -1,0 +1,74 @@
+{
+ "slot": "reference_list",
+ "target_aspect": "16:9",
+ "references": [
+  {
+   "id": "candy_rocker_portrait",
+   "kind": "character",
+   "prompt": "Half-body portrait of a stylized 3D cartoon candy rockstar, chest-up, front-facing, neutral expression, hands relaxed, no props. Spiky two-tone candy-shell hair in red and blue swirls, glossy cherry-red jacket with black button studs, no sunglasses, sharp confident grin. Plain light-gray studio background, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy surfaces with subsurface scattering, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions, large expressive eyes, exaggerated facial features for emotional clarity. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/767355357f3c435381fcd37497ae0144.jpg"
+  },
+  {
+   "id": "candy_rocker_look_a",
+   "kind": "character",
+   "prompt": "Two-panel character reference sheet of a stylized 3D cartoon candy rockstar, side by side with a thin neutral divider, identical character, outfit and lighting in both halves. LEFT: upper-body, chest-up, head and face clearly visible, front-facing. RIGHT: full-body head-to-toe, neutral standing pose, arms relaxed. Keep the exact same face, hair and proportions as the source portrait. STAGE LOOK: spiky two-tone candy-shell hair in red and blue swirls, glossy cherry-red jacket with black button studs, round black shades with dark reflective lenses, sharp confident grin. No props in hands. Plain light-gray studio backdrop, no environment, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy surfaces with subsurface scattering, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions, large expressive eyes. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg",
+   "depends_on": "candy_rocker_portrait"
+  },
+  {
+   "id": "candy_rocker_look_b",
+   "kind": "character",
+   "prompt": "Two-panel character reference sheet of a stylized 3D cartoon candy rockstar, side by side with a thin neutral divider, identical character, outfit and lighting in both halves. LEFT: upper-body, chest-up, head and face clearly visible, front-facing. RIGHT: full-body head-to-toe, neutral standing pose, arms relaxed. Keep the exact same face, hair and proportions as the source portrait. BATTLE LOOK, shades removed: spiky two-tone candy-shell hair in red and blue swirls slightly tousled, glossy cherry-red jacket with black button studs unbuttoned over a dark tee, no sunglasses, sweat-glossy face, determined half-grin. No props in hands. Plain light-gray studio backdrop, no environment, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy surfaces with subsurface scattering, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions, large expressive eyes. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg",
+   "depends_on": "candy_rocker_portrait"
+  },
+  {
+   "id": "gummy_army_look_a",
+   "kind": "character",
+   "prompt": "Two-panel character reference sheet of a stylized 3D cartoon gummy bear soldier, side by side with a thin neutral divider, identical character, outfit and lighting in both halves. LEFT: upper-body, chest-up, head and face clearly visible, front-facing. RIGHT: full-body head-to-toe, neutral standing pose. Cheerful slightly dented glossy pink gummy-bear soldier with soft bite marks, mismatched candy armor, a bent tin-foil chest plate, a marshmallow shield on one arm, a candy-cane spear in one hand. Plain light-gray studio backdrop, no environment, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy gummy surfaces with subsurface scattering, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions, large expressive eyes. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+  },
+  {
+   "id": "little_bear_look_a",
+   "kind": "character",
+   "prompt": "Two-panel character reference sheet of a small dented runt of a gummy bear soldier, side by side with a thin neutral divider, identical character, outfit and lighting in both halves. LEFT: upper-body, chest-up, head and face clearly visible, front-facing. RIGHT: full-body head-to-toe, neutral standing pose. Smaller scruffy glossy pink gummy bear with a notched ear, a dent in its head, oversized marshmallow shield, worn candy-cane spear, determined jaw, big expressive eyes. Plain light-gray studio backdrop, no environment, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy gummy surfaces with subsurface scattering, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+  },
+  {
+   "id": "sour_worms_look_a",
+   "kind": "character",
+   "prompt": "Two-panel character reference sheet of a neon-green sour gummy worm, side by side with a thin neutral divider, identical creature and lighting in both halves. LEFT: close view of the worm's head, face clearly visible, big expressive eyes, open grinning mouth. RIGHT: full-length view of the glossy elastic segmented worm body coiled in an S-curve. Plain light-gray studio backdrop, no environment, even studio lighting. 3D CGI rendering in the style of [Inside Out]: glossy gummy surfaces with subsurface scattering, toxic sour green, vibrant saturated candy-bright color palette, soft edges, rounded cartoon proportions. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+  },
+  {
+   "id": "candy_arena_base",
+   "kind": "location",
+   "prompt": "Empty interior of a giant candy arena shaped like the inside of a crumpled candy wrapper, no characters. A gummy stage shaped like a bitten candy bar at the center, confetti cannons at the stage edge, a giant candy-wrapper screen hanging above the stage, rows of empty glossy gummy seats rising around. Arena spotlight beams cutting through sugar-dust haze, glossy wrapper surfaces in bubblegum pink and candy-corn yellow with midnight-purple shadows. 3D CGI rendering in the style of [Inside Out]: glossy surfaces with subsurface scattering, vibrant saturated candy-bright palette, soft volumetric lighting, floating sugar-dust particles. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+  },
+  {
+   "id": "candy_battlefield_base",
+   "kind": "location",
+   "prompt": "Empty war-torn candy kingdom battlefield at night, no characters. Broken candy-cane pillars leaning at odd angles, chocolate-mud trenches winding through the ground, sour-worm tunnels burrowed into the earth, a dark purple crystallized-sugar storm cloud looming low in the sky, arena-style spotlight shafts cutting through sugar-dust haze, moonlight on glossy gummy rubble. 3D CGI rendering in the style of [Inside Out]: glossy gummy surfaces, vibrant saturated candy-bright palette with midnight-purple shadows, soft volumetric lighting, floating sugar-dust particles. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+  },
+  {
+   "id": "mouth_arena_base",
+   "kind": "location",
+   "prompt": "Inside a giant cartoon mouth, the war in a candy lover's head, no characters. Candy-corn teeth forming the jaw, a huge glossy red lollipop tongue, a gumdrop uvula hanging at the back of the throat, warm light glowing from the throat, wet glossy candy surfaces, sugar-dust in the air. 3D CGI rendering in the style of [Inside Out]: glossy surfaces with subsurface scattering, vibrant saturated candy-bright palette, soft volumetric lighting. No text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/afd46df6029e4998b39990cc008244cc.jpg"
+  },
+  {
+   "id": "sugar_cloud",
+   "kind": "prop",
+   "prompt": "A dark purple storm cloud made of crystallized sugar, glittering sugar-crystal edges, faint glowing interior, isolated on a dark neutral backdrop, three-point studio lighting showing the crystalline texture. 3D CGI rendering in the style of [Inside Out]: glossy crystalline surfaces, vibrant saturated candy-bright palette with midnight-purple shadows, soft volumetric lighting. No characters, no text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/3c8cb2bc679e4d11b8c183c106155762.jpg"
+  },
+  {
+   "id": "gummy_bass",
+   "kind": "prop",
+   "prompt": "A glossy gummy bass guitar with a candy-cane striped neck, gumdrop tuning pegs, a coiled sour-worm cable, cherry-red gummy body with glossy subsurface shine, isolated on a dark neutral backdrop, studio lighting showing the gummy texture. 3D CGI rendering in the style of [Inside Out]: glossy gummy surfaces with subsurface scattering, vibrant saturated candy-bright palette. No characters, no text on the image.",
+   "image_url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+  }
+ ]
+}
