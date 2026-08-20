@@ -31,12 +31,17 @@ Project: full-song MV (196.96s, 20 segments) for Garret's "Twisted Candy"
 Original sour_worms job (71fd5c78) completed with NO media — re-submitted (cf643c5d), landed fine. A LATE second worm sheet landed via async job (fe0435a218a74b5692b45eb3a390e620.jpg) AFTER phase 04 closed — compared head-to-head vs 2141dd1a: rejected (inconsistent translucency between panels, mismatched facial proportions). reference_list unchanged.
 
 ## Done: Phase 05a video prep (draft, not finalized)
-
 - video_prep v1 draft: /workspace/twisted_candy/video_prep.draft.json + artifact slot video_prep (version 1, draft).
 - 15 non-lipsync (seedance-2-0-mini, @imageN image_urls channel, no ARK) + 5 lipsync (dlai2v_pro, segs 04/07/08/13/16).
 - Self-check script (check_video_prep.py inline in turn): 20/20 pass — shot lines == shot_count, durations ceil'd, audio slices verified against segment_urls.json (6 shifted-by-one audio refs caught + fixed), lipsync prefix + per-shot lip-sync phrase + no cuts/placeholders + keyframes empty, non-lipsync mouth-closed clause + banned stillness words absent + style capper ≤15 words + all @imageN named.
 - Look mapping: rocker look_a (shades ON) for arena segs 01/02/04/07/12/19/20; look_b (shades OFF) for 08/13/16/17/18; seg_16 lipsync refs include gummy_army sheet (army parts for him).
 - NEXT: Phase 05b — read phases/05b-lipsync-keyframes/PHASE.md; generate 2-3 keyframes per lipsync seg (shot_count drives target_keyframe_count) via gpt-image-2, split, upload, backfill role=keyframe, finalize video_prep.
+
+## In progress: Phase 05b keyframes (Aug 20 ~10:15 UTC)
+
+- 5 grid jobs submitted (async, 75cr each = 375cr): kf_seg_04 (2 panels, 1:1), kf_seg_07 (2, 1:1), kf_seg_08 (2, 1:1), kf_seg_13 (2, 1:1), kf_seg_16 (3 panels, 9:16). Job refs in phase05b_job_map.json. Prompts in phase05b_jobs_clean.json (valid flags only; batch schema rejects extra fields like segment_id).
+- When async results land: run split_keyframe_grid.py --grid-image-url=... --target-keyframe-count=N --aspect-ratio=16:9 --resolution=2K --segment-id=seg_NN --output-dir=/workspace/twisted_candy/keyframes/, upload each panel via upload_file, validate via understand_media (identity + face/mouth visible + no borders/text), then write back keyframes into video_prep draft (ref_id keyframe1..N, frame_position per count table), read back + self-check, then dl artifact finalize --slot=video_prep --mode=verify_and_promote (contract path needed) and proceed to Phase 06.
+- CLI gotchas (this session): generate-image-ref is the current verb (generate-image retired); batch --jobs rejects extra metadata fields; image refs key = image_urls; --dry-run quotes 75cr/job.
 
 ## Next: Phase 05a video prep
 
