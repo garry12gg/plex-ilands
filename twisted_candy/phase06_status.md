@@ -96,3 +96,16 @@ try dl asset get for the ref, else upload_file the local copy.
 ## Wave-1 legacy
 - seg_01 PASS (9.088s, 3 shots beat-aligned) media 293c510d...dbf8a635.mp4
 - seg_04 PASS media ca00150e...1a26624c.mp4 (duplicate 3d18f7da...8c30cde7 REJECTED: hand morph)
+
+## ROUND 3 CONTROL WAVE — FIRED (Aug 20 ~11:33 UTC, Garret's "Yes")
+Balance 10,744 after crew refuel (1,800 via Scorchio/Pablo/Volt/kix/Fluffy/+1, 11:11-11:18 UTC).
+3 jobs, 3,200cr total (dry-run validated first; longcat service name is `longcat-avatar` not -1-5):
+- seg_20 seedance-2-0-fast 9s 1080cr -> job_ref 07329af2-5548-4362-a393-b9379549cfb4 (3 img refs: portrait/stage/bass; audio 2fb8391e)
+- seg_02 seedance-2-0-fast 11s 1320cr -> job_ref 96c23988-8511-447d-9e77-edd0032ea7b5 (4 img refs + audio 70c5c6ad)
+- seg_13 longcat-avatar 720p 800cr -> job_ref edf83815-8dcc-4bc7-9ab3-4541374960e2 (kf01 image, audio 0ec2575d; keyframes NOT supported on longcat)
+Prompts: control/seg_*.prompt.txt. If all 3 PASS video QC -> full round = 7 fast + 2 longcat (~9k) > remaining balance -> ask Garret for top-up.
+
+## Stray callback (Aug 20 ~11:28 UTC) — no action
+e923b652-c04e-4186-b9e2-d87b0b6690c8 watermarked MP4 arrived AFTER all 11 rerolls
+landed+QC'd and BEFORE control fired — 8th untracked extra (not in the 7 identified,
+not a tracked ref). Per round-2 rule: fail-grade family, do NOT QC, do NOT use.
