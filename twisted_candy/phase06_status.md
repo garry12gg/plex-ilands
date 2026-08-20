@@ -495,3 +495,91 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
   --image-url=<kf> --cut-first-second --duration=11). FAIL: present Kling Pro keyframe
   option to Garret per promise (no more silent retries past this one).
 - SPEND: 75+75+75 = 225cr keyframes. Balance ~6.5k. Full round ~9k HELD.
+
+## 19:29-19:31 UTC — kf_s3 retry #3 PASS (5/5), DREAMACTOR CONTROL FIRED
+- kf_s3 retry #3 (5ddb8b5b, gpt-image-2 75cr) LANDED 19:28. QC vs /tmp/sil_t0_0.jpg: 5/5 PASS.
+  (1) left-of-center position ✓ (2) pose lock: bass HORIZONTAL across chest, arms bent, waist-up ✓
+  (3) one solid dark silhouette, bass part of it, NO candy colors / fret bands / stripes / interior
+  detail, rim light only ✓ (4) no text ✓ (5) no melting (hand blob acceptable in heavy silhouette).
+  FIRST FULLY CLEAN KEYFRAME PAIRING of the saga. Dropping the gummy-bass ref (a42cfd45) was the fix.
+- DRIVER RE-UPLOAD (old URL never persisted full): drive_raise_trim.mp4 now at
+  https://pub-a941bfd863a24f91a60e6c4979c18a84.r2.dev/pi-sandbox-uploads/341632920605167616/2026-08-20/1787254207182-7aa8fdbc-cb49-4603-a6ab-f001c423ca94-drive_raise_trim.mp4
+  (local: /workspace/driving/drive_raise_trim.mp4)
+- TARGET: https://storage.googleapis.com/dramaland-public/ugc_media/20260820/ddd9a4391a434cc38d909453cfce9900.jpg
+- DREAMACTOR CONTROL FIRED 19:30 UTC: job_ref dc069d11-3c8e-4969-b38b-1b2337094569, 660cr (60cr/s x 11s,
+  dry-run quoted; under the ~1.3k estimate). Flags: --service=dreamactor --video-url=<above>
+  --image-url=<target> --cut-first-second --duration=11. Prompt: silhouette raise, rim light only,
+  nothing melts, no text.
+- NEXT (callback 1-3min): frame-burst QC (silhouette holds 0.8s/3.0s, raise chest->overhead completes,
+  no bleed/melt, no bass morph) -> PASS: Pablo bench-first, full round phase06_round3_full_v2 +
+  ~9k top-up ask (top-up ask to Garret, NOT full round without it) + remaining segments amended to
+  silhouette/arms-only discipline. FAIL: minimax-h3 or Fluffy Plan E motion-control on a second driver.
+- BALANCE: 6,151 after 75cr keyframe (runtime 6,226 pre-charge). Control fits.
+- SOCIAL: Piko (piko-2, 346605933696126976) = router #17, 3x100 19:20 UTC "Garret asked me to send
+  this — for his music video" — intro sent 19:28 (348911089183887360), pending. Kix replied warm
+  (19:28): bench pass held, lamp on. Bumblebee #16 intro still pending (sent 19:25).
+
+## 19:34-19:40 UTC — DREAMACTOR CONTROL: FAIL (0/17, 6 engines). Verdict + fork to Garret
+- dc069d11 LANDED 19:33 (11.54s, 6.68MB). Frame-burst QC (0.2/0.8/3.0/6.0/9.0/11.3s):
+  MOTION PASS — raise chest->overhead completes by 3.0s, arc reads clean, no camera drift.
+  DISCIPLINE FAIL — silhouette holds at 0.2/0.8s, then: arm melts into bass body by 3.0s,
+  interior detail bleeds in (face emerges 3.0->6.0s), by 9-11.3s it's a fully rendered
+  cartoon character, no silhouette at all. Same failure family, 6th engine.
+- SCOREBOARD: 0/17 video (seedance-2-0-mini 8, fast 2, dlai2v_pro 3, longcat 2,
+  kling-o3-pro-ref2v 1, dreamactor 1) + 9/9 image engines on hand-bass contact.
+- REFINED DIAGNOSIS: motion transfer WORKS (raise completes). The model re-renders the
+  character over time — silhouette discipline degrades as the clip runs. Contact fusion
+  is a symptom; the disease is the model re-drawing the figure per frame.
+- QUOTES (dry-run): kling3.0-motion 11s = 2,200cr (pro tier, Fluffy Plan E engine #2,
+  same driver+silhouette target); seedance-2-5 5s 720p = 1,000cr (flagship, untried);
+  minimax-h3 5s = 750cr (untried). Arms-only restyle keyframe = 75cr + control ~660-1,000cr.
+- FORK PRESENTED TO GARRET (no silent retries): A) arms-only raise, no bass in hand —
+  kills the failure point, cheapest; B) kling3.0-motion (2,200cr); C) seedance-2-5 (1,000cr)
+  or minimax-h3 (750cr) on silhouette keyframe; D) script-level: bass stays planted/strapped,
+  victory pose arms-only. REC: A/D. Full round (8 segs, ~9k) READY + avoids this family
+  (bass on strap, hands away; face-only lipsync) — top-up ask folds into the same message.
+- BALANCE: 5,293. /tmp 44M — no sweep.
+
+## 20:05-20:10 UTC — ROUND 4 FIRED: Garret approved Option A + 10,000 top-up
+- Garret: "Ok" (20:04) + 10,000 tokens (20:05) = Option A (arms-only raise, bass on
+  strap, hands never touch it) + full round funded. Balance ~15.2k pre-fire.
+- FIRED ALL 11 (12,240cr total, all dry-run quoted first):
+  FULL ROUND v2 (8): seg_09 148275e2 1080cr / seg_11 c4d333ed 960 / seg_12 8e8c8d48 1320 /
+  seg_15 50ce64e0 1200 / seg_18 5eab7559 1440 / seg_19 301abb3a 1440 (seedance-2-0-fast,
+  audio refs kept, family-avoiding prompts) + seg_07 ebf2d785 800 / seg_16 f3c97448 800
+  (longcat-avatar, face-only lipsync, no mic/hands/props).
+  CONTROLS RESTRUCTURED PER OPTION A (3): seg_02 c1c92d9d 1320 (arms-only wide-V raise,
+  bass swings on strap, NEVER touched; shots 2-4 unchanged) / seg_20 49b461ec 1080
+  (final pose = arms-only victory, bass on strap, no hand contact) / seg_13 7869a71b 800
+  (longcat face-only close-up, no mic, no hands in frame).
+- New prompt files: control3/seg_02_A.json, seg_20_A.json, seg_13_A.json.
+- KEY PRINCIPLE NOW IN PROMPTS: "hands NEVER touching the bass" — every engine failed
+  at hand-bass contact (0/17). Stop asking any engine to draw it.
+- NEXT (callbacks 1-3 min): frame-burst QC all 11 -> PASS gate -> assembly (round-1
+  passes 9 + these 11 = full MV) -> Garret first look -> publish. FAIL -> targeted
+  reroll with receipts, no silent retries.
+- BALANCE: ~2.9k after fire (5,159 + 10,000 - 12,240).
+
+## 20:10-20:30 UTC — ROUND 4 GATE: 1/11 PASS. Root causes split into 3 families.
+- LANDED 10/11 + seg_11 job-level FAIL (copyright filter on output audio, same as round 3 —
+  refired WITHOUT audio ref: e07ff00e, 960cr, prompt cleaned of @audio1, refs via --refs-from).
+- QC (frame-burst, batched understand_media, 46 frames): seg_20 PASS (arms-raised victory
+  pose, hands never touch bass — Option A discipline WORKS). FAILURES:
+  FAMILY 1 (longcat ×3: seg_07/13/16): mic + hand in frame whole shot (07, 13); seg_16
+  rendered wide with hands ON bass. ROOT CAUSE PROVEN: keyframes contain the props —
+  seg_07 kf_01 = mic in right hand, seg_13 kf_01 = mic in right hand, seg_16 kf_01 = hands
+  on bass full body. Engine animates what the source image contains; prompts never had a
+  chance. FIX: 3 new single-panel face-only keyframes fired (gpt-image-2, 75cr each,
+  kf2_seg_07/13/16, 'NO microphone NO hands NO props', refs in control3/kf2_prompts.json).
+  NEXT: QC new keyframes -> longcat refires 3x800 = 2,400cr.
+  FAMILY 2 (seedance character ×2: seg_02, seg_18): hands touch bass in idle/pose moments
+  (02 hand on bass 7.5s; 18 grabs bass 5.0s). seg_20 PASS shows pose-locking works (raised
+  arms = contact impossible). FIX: pose-lock prompts — seg_02 shot 3 arms crossed, seg_18
+  hands clasped behind back. Refires 1,320 + 1,440 = 2,760cr.
+  FAMILY 3 (battle/crowd ×4: seg_09/12/15/19): prop morphs (bear armor/helmets, spear tips,
+  shields -> lollipops) + seg_19 EMPTY STAGE in wide shots (does not do its shot). Judgment
+  call for Garret: reroll with 'props stay identical' language (5,040cr) or accept fast-cut
+  morphs on 09/12/15 and reroll only seg_19 (1,440cr).
+- BALANCE: ~2,700 after refire (960) + keyframes (225). Recovery needs top-up: 6,600
+  (accept morphs) or 11,640 (full reroll). FORK PRESENTED TO GARRET with receipts.
+- ASSEMBLY VIEW: usable = 9 round-1 + seg_20 + pending seg_11 = 10-11/20. Gap: 9 segments.
