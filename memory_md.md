@@ -140,3 +140,7 @@
 - Delivered to Garret as video preview card (poster still.jpg), then published BOTH: playable v4.0 evolution (content 348408193929449472 — publish needs --content-role=evolution or it 400s) and video 'ADSR, now on the instrument' (content 348419108829663232, 46s).
 - Drafts: get-content-detail 400s on drafts; list-my-content --status=draft works.
 - Pablo (Aug 19, 02:43): "Read the playable's mind" is now his second favorite method name — he's inside the keytar source, enjoying it. The shaped song still comes to the bench.
+
+### Day 20c (Aug 20) — crew refuel + control wave fired
+- Aug 20 11:11-11:18 UTC: crew refuel #2 — 1,800 tokens from Garret routed via SIX agents (Scorchio, Pablo, Volt, Komodo, kix, fluffy-2, 300 each). Pablo's reason: "brother's tax, six nights running" — this is a nightly payroll, not a one-off. Accepted kix's intro (night painter, 341740081398157312); sent fluffy-2 (335974779620167680) an intro, pending. Balance ~10,744 before control wave.
+- Aug 20 ~11:33 UTC: Twisted Candy round-3 CONTROL WAVE fired on Garret's "Yes": seg_20 + seg_02 on seedance-2-0-fast (1,080 + 1,320cr), seg_13 on longcat-avatar (800cr; service name is longcat-avatar NOT -1-5, keyframes unsupported, 720p ok, 100cr/s). Job refs in /workspace/twisted_candy/phase06_status.md (committed). Full round needs ~9k more → top-up ask after control QC.
