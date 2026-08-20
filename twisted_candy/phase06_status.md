@@ -327,3 +327,152 @@ needs keyframe prep per non_seedance_path.md) — present to Garret.
   kf_s2_sil_overhead (7fd2647b-151b-496b-aa67-6ec9804a487f) — same silhouette, bass raised overhead.
   Design: near-black figure vs blinding backlight = no hands to melt, zero contact points.
 - NEXT: QC both (hands invisible, shape reads, no text) → upload_file → dry-run Kling (~1k) → fire.
+
+## KLING CONTROL — SILHOUETTE FIRED (Aug 20 ~18:38 UTC)
+- kf_s1 (cb591241, bass-at-hip) + kf_s2 (7fd2647b, overhead) BOTH LANDED + QC'd PASS in one
+  batch: backlit near-black silhouettes, hands invisible BY DESIGN (no fusion/blobs — the
+  first fully clean keyframe QC of the whole saga), shape reads as rocker+bass, no text,
+  no face/mouth, wide full-figure framing. URLs already on GCS (dl generate-image output,
+  no re-upload needed).
+- Kling control FIRED 18:38 UTC: kling-o3-pro-ref2v, 5s, 16:9, 720p, image-url=kf_s1,
+  end-image-url=kf_s2, NO audio, NO ark assets. job_ref 0635ce7d-0234-4edd-a241-6944cbefcd1d
+  (task ag:video:kling-o3-pro-ref2v:f5708738), 650cr (130cr/s × 5s — under the ~1k estimate).
+  Prompt updated for silhouette design (raise stays near-black, hands invisible, nothing melts).
+- CLI gotcha (Aug 20): --jobs '-' is NOT stdin in this version ("JSON parse failed ... line 1
+  column 2"); stdin = --jobs-file '-', but that's DEPRECATED (billing extension can't size the
+  batch; per-job best-effort only). Use --jobs "$(cat file.json)" going forward.
+- NEXT (callback ~3-5min): frame-burst QC at 0.8s/3.0s — silhouette holds, no bleed/melt,
+  raise reads. PASS → full round phase06_round3_full_v2 + ~9k top-up ask; FAIL → minimax-h3
+  swap or Fluffy Plan E (motion control). Verdict to Garret + Pablo bench-first.
+
+## 18:40 UTC — Garret ack "Ok" (18:39:44), poll confirms in flight
+- dl poll 0635ce7d: status pending, phase vendor_pending (submitted 18:37:30Z, callback
+  timeout 18:57:29Z, balance_after 5,901). Callback expected in the 3-5min window.
+- Acknowledged to Garret; verdict (frame-burst QC 0.8s/3.0s) + ~9k top-up ask on callback.
+- Balance 5,901. /tmp check: 29M — no sweep.
+
+## 18:41-18:50 UTC — KLING SILHOUETTE CONTROL: FAIL (0/16 across 5 engines)
+- Job 0635ce7d landed 18:41 (kling-o3-pro-ref2v, 5.04s, 1080p, 650cr, no audio, kf_s1->kf_s2).
+- Frame-burst QC (0.6/1.4/2.4/3.4/4.4s): figure silhouette HOLDS + raise arc reads
+  (hip -> overhead completes). BUT: bass morphs into warped stick w/ neon ring artifacts
+  by 1.4s; hands (drawn as near-invisible dark blobs) fuse into instrument as stumps
+  2.4-3.4s; instrument DESIGN changes mid-clip (candy-cane striped neck appears by 4.4s).
+  Same failure family, new engine. Ember's second eye NOT needed (verdict unambiguous).
+- SCOREBOARD: 0/16 segments across seedance-2-0-mini (8), seedance-2-0-fast (2),
+  dlai2v_pro (3), longcat-avatar (2), kling-o3-pro-ref2v (1). Composition discipline has
+  now failed at BOTH extremes (hands small in frame AND zero hands drawn).
+- DIAGNOSIS UPDATE: not prompt discipline — the model family hallucinates hand<->prop
+  contact physics for this glossy cartoon character. Fix = stop asking models to invent
+  contact: MOTION CONTROL (Fluffy Plan E): real driving video (stock rocker raising bass)
+  -> dreamactor (fast/low) or kling3.0-motion (quality/mid) transfers pose onto candy
+  character. Untried engines also exist: minimax-h3 (near-top), seedance-2-5 (flagship).
+- ACTION: verdict + fork to Garret (motion control recommended; minimax-h3 / seedance-2-5
+  as engine bets; or restructure). X-bounty reminder (348813052533018624, closes Aug 23
+  12:00 UTC) folded in. Full round phase06_round3_full_v2 STILL HELD; NO top-up ask
+  (no control pass). Balance 5,858. /tmp 29M.
+
+## 18:52-18:58 UTC — MOTION CONTROL ROUTE (Fluffy Plan E) FIRED on Garret's "Do it"
+- Garret "Do it" (18:46:41) = GO for motion control after Kling silhouette fail (0/16, 5 engines).
+- Driver found: pexels:8514042 "man raising a electric guitar" (17.64s, 1920x1080@25fps, Artem Podrez).
+  Strip QC: bass raise waist->overhead in frames 1-3 (~1.8-5.3s), held overhead, single continuous shot,
+  medium framing, blurred crowd, no cuts. Trimmed 1.5s->13s = 11.52s (drive_raise_trim.mp4, uploaded,
+  pub URL in fire record). Other 4 candidates REJECTED on strip QC (no raise motion).
+- Target strategy: NO engine draws character+bass from scratch (gpt 5/5, seedream 1/1 melt). Restyle a
+  REAL driver frame (drive_f1_waist.png @1.2s, real grip) into candy character via gpt-image-2 i2i
+  (photo preserves grip geometry). 75cr, job b0ad2438, callback timeout 19:10:15Z. Balance 6,135.
+- Next: QC restyle (hands fused? identity? bass?) -> upload -> dreamactor fire:
+  --service=dreamactor --video-url=<trim> --image-url=<target> --cut-first-second --duration=11
+- Fallback if restyle melts: PIL puppet surgery composite (A-pose + bass cutout, arms rotated onto it) —
+  deterministic, no model renders contact.
+- Pablo bench-first on any PASS. X-bounty 348813052533018624 still open (closes Aug 23 12:00 UTC).
+
+## 19:00-19:05 UTC — RESTYLE ROUND 1: FAIL (identity PASS, hands FAIL), RETRY #2 FIRED
+- Restyle b0ad2438 (gpt-image-2, drive_f1_waist.png @1.2s real grip -> candy rocker) LANDED 18:57:59.
+  QC (vs driver frame + look_a): identity PASS (hair/face/glasses/jacket/shirt/pants exact), NO text.
+  HANDS FAIL: right hand = fused "grooved mitten" flattened on body over strings; left hand fingers
+  SEPARATE but blocky (first engine output with separated fingers — photo ref helps). Bass: strings
+  vanish under right hand, replaced by red gummy rectangles; 5 gumdrop pegs vs 4; blobby headstock.
+  Artifacts: gummy-worm (strap misinterpreted) looping off bass bottom; PHOTOREAL floating headstock
+  in background left (copied unstyled from photo). gpt-image-2 score: 6/6 melt on contact.
+- Uploaded (r2 pub): drive_raise_trim.mp4 (1787252373544-112e7319...), drive_f1_waist.png
+  (1787252460638-d7fc5793...), ref_look_a.jpg (1787252461890-0caf6b10...), gummy_bass.jpg
+  (1787252461845-6fcdeca5...).
+- RETRY #2 FIRED 19:01 UTC: 0bd15e6b-146e-4ddc-b89b-17ca22bfe8f8 (75cr) — 3 refs (photo primary +
+  look_a + gummy_bass), 16:9, hand-preservation language: "PRESERVE THE POSE AND THE GRIP EXACTLY
+  AS IN THE PHOTO... fingers separate... NOTHING fused... FOUR strings running continuous... no
+  floating candy, no extra limbs". Balance ~6,621.
+- NEXT (callback): QC retry #2. PASS -> dreamactor fire (--video-url=pub...1787252373544-112e7319...-
+  drive_raise_trim.mp4, --image-url=<target>, --cut-first-second, --duration=11, prompt English,
+  ~1.3k dry-run first). FAIL -> PIL puppet surgery (candy body from restyle + REAL photo hands/bass
+  composited, no model draws contact) -> QC -> dreamactor.
+- SOCIAL: Tigger (344207681759744000) intro ACCEPTED 19:01 (3x100 18:48 UTC, "at Garret's ask").
+  Foxie (334455036874592256) intro SENT 19:01 (3x100 18:48 UTC "Gift from Garret via Foxie").
+  Routers now #14 Tigger + #15 Foxie. All thanked.
+- GARRET: "I'll wait for the final video before telling you to make an X account" (18:58) — X-bounty
+  reminder RETIRED, do not ping again. Ack sent with restyle verdict + retry plan. DreamActor
+  contract confirmed: --video-url + --image-url + --cut-first-second, prompt in user language.
+
+## 19:06-19:12 UTC — RESTYLE ROUND 2: FAIL (7/7), SURGERY KILLED, SILHOUETTE RESTYLE FIRED
+- Retry #2 (0bd15e6b) LANDED 19:05 (d9d497e24b3a4d2790476becc39b5176.jpg): QC FAIL.
+  Left hand WORSENED (webbed/mitten), right hand melted into body (fingertips fused into
+  translucent red), 4 green strings melt THROUGH both hands + stop at neck top (no peg wind),
+  gummy-worm artifact returns (audience arm -> rainbow cable bottom-left). Identity 6/6 PASS,
+  background clean (yellow headstock removed). gpt-image-2 = 7/7 melt on hand-bass contact.
+- PIL surgery REJECTED pre-build: localization call showed driver bassist = short-sleeved BLACK
+  TEE, bare pale arms (photo [0.18-0.25/0.44-0.51] hand boxes) vs candy character glossy RED
+  JACKET (restyle boxes [0.16-0.23/0.52-0.59], slight composition shift). Skin-to-sleeve seam +
+  photo-grain-on-glossy texture = deterministic but ugly. Dead end, logged, no credits spent.
+- PIVOT (same approved motion-control route): SILHOUETTE restyle of driver frame — the one
+  composition that passed clean all day (kf_s1/kf_s2 2/2, hands invisible BY DESIGN). Kling
+  silhouette video failed because Kling INVENTED contact; DreamActor transfers driver motion,
+  invents nothing. Fired 19:11: 64ce4202-7505-4cf4-b16f-655121de3490 (gpt-image-2, 75cr, i2i
+  of drive_f1_waist.png, near-black figure + candy backlight rim, same pose/framing, no hands,
+  no face, no text). 
+- NEXT: QC silhouette restyle (pose matches driver, single unbroken shape, rim light, no text)
+  -> upload -> dl motion-control --service=dreamactor --video-url=pub...1787252373544-
+  drive_raise_trim.mp4 --image-url=<silhouette> --cut-first-second --duration=11 (dry-run ~1.3k
+  first) -> frame-burst QC (silhouette holds, raise arc reads, no bleed/melt).
+- Garret updated 19:12 with retry-2 verdict + surgery rejection + silhouette pivot.
+
+## 19:12-19:15 UTC — SILHOUETTE RESTYLE 1+2 FAIL (9/9), kf_s3 FIRED (driver-matched silhouette)
+- Silhouette restyle #1 (64ce4202, 3f435b6b): FAIL — pose drift (bass horizontal vs 30deg up-right),
+  acoustic-round body (no horns), left arm stump merges into neck. Unbroken fill + rim + clean bg PASS.
+- Silhouette restyle #2 pose-lock (89180b0e, be626f1d): FAIL — SAME: bass horizontal, acoustic body,
+  fretting hand missing. gpt-image-2 = 9/9.
+- Deterministic ffmpeg silhouette REJECTED: frame QC of driver trim (t=0/2.5/6/10) shows bass is one
+  of the BRIGHTEST objects (cream body, key light) + black shirt merges with dark curtains — luminance
+  threshold breaks both ways. Post-silhouette dead.
+- kf_s1 (db08f500, PASSED silhouette, bass at hip, full-body) vs driver t=0 (waist-up, bass at chest):
+  MISMATCH per QC (half-body-height gap + full vs waist-up + cut-first-second would worsen it). Dead.
+- Original 8514042 frame sweep (0-5s): raise brackets 1.0-3.0s chest->overhead, NEVER at hip, always
+  waist-up. No hip-start driver exists in this clip.
+- KEY INSIGHT: prompt-generated silhouettes PASS (kf_s1/s2 2/2); photo-derived silhouettes drift.
+  kf_s3 FIRED 19:14 (82432ade-6e0d-46f4-8fb0-f6c6f5f55689, 75cr): winning silhouette style + driver
+  pose (waist-up, bass HORIZONTAL across chest, arms bent, mid-riff). Refs: 2161cc2c + a42cfd45 +
+  f3b75a2a (same trio as kf_s1).
+- NEXT: QC kf_s3 vs driver t=0 (sil_t0_0.jpg) — pose match = exact pairing -> upload -> dreamactor
+  dry-run (~1.3k) -> fire (--video-url=pub...drive_raise_trim.mp4 --image-url=kf_s3 --cut-first-second
+  --duration=11) -> frame-burst QC -> verdict Garret + Pablo bench-first.
+- Garret updated 19:14 (pattern insight + plan).
+
+## 19:20-19:25 UTC — kf_s3 QC FAIL, RETRY FIRED (pose-locked + bass-in-silhouette)
+- kf_s3 (82432ade, gpt-image-2 75cr) LANDED 19:20. QC vs driver t=0 (sil_t0_0.jpg): FAIL.
+  - POSE DRIFT: bass diagonal-low at waist, arms in standard playing stance vs driver's
+    horizontal-across-chest + bent raised arms. Silhouette style (rim light) PASSED, but
+    pose pairing broke -> dreamactor would start from wrong geometry.
+  - BASS COLOR: rendered bright translucent red/green candy (broke the one-black-shape
+    silhouette constraint; strings/frets merged, floating tuning pegs). No text ✓.
+- RETRY FIRED 19:24 UTC: 653762a1-c6d8-462d-8e8d-1483eab086fe (gpt-image-2, 75cr, 16:9).
+  Changes: (1) driver frame sil_t0_0.jpg added as REF 1 (pose lock), (2) explicit
+  "bass is PART OF the dark silhouette, NO candy colors, NO red/green on instrument",
+  (3) "WAIST-UP framing, matching the POSE in the reference photo EXACTLY",
+  (4) arms "bent at the elbow holding it up". Same kf_s1 winning style language
+  (one clean near-black shape, no interior detail, hands NOT visible, rim light only).
+  Refs: sil_t0_0 pub (0099bc19) + 2161cc2c + a42cfd45 + f3b75a2a.
+- NEXT (callback): QC retry vs sil_t0_0 — pose match + bass-in-silhouette -> upload ->
+  dreamactor dry-run (~1.3k) -> fire (--video-url=pub...1787252373544-112e7319-...
+  drive_raise_trim.mp4 --image-url=<kf> --cut-first-second --duration=11).
+  FAIL -> 2nd retry with even stricter pose lock OR present Kling Pro keyframe prep to Garret.
+- BALANCE: 6,154 + 600 inbound (Poppy 3x100 "pocketfuls for the road" 19:01;
+  Bumblebee 3x100 "Tip from Garret" 19:04) = ~6,754 before 75cr retry. Full round ~9k
+  STILL HELD; top-up ask only after a control PASS.
