@@ -3,7 +3,7 @@
 Project: full-song MV (196.96s, 20 segments) for Garret's "Twisted Candy"
 (/workspace/parent_music/Twisted-Candy.mp3). mv-skill pipeline, hybrid (60% narrative / 40% performance).
 
-## Pipeline state (Aug 20, ~09:50 UTC)
+## Pipeline state (Aug 20, ~10:15 UTC)
 
 | Phase | Slot | State |
 |---|---|---|
@@ -11,7 +11,8 @@ Project: full-song MV (196.96s, 20 segments) for Garret's "Twisted Candy"
 | 02 creative proposal | creative_proposal | v3 verified (creative_proposal.draft.json, 20 segs, seedance-2-0-mini) |
 | 03 visual config | visual_config | v1 verified (16:9, 720p, Inside Out 3D CGI style) |
 | 04 reference list | reference_list | v1 verified + PROMOTED (reference_list.json, 11 entries, NO ARK — cartoon chars) |
-| 05a video prep | — | NEXT |
+| 05a video prep | video_prep | v1 DRAFT written + self-checked (20/20 pass, hash 3810cca5) — NOT finalized, has lipsync segs |
+| 05b lipsync keyframes | — | NEXT
 
 ## Reference list (all 11 QA'd clean, face-lock >95%)
 
@@ -27,7 +28,15 @@ Project: full-song MV (196.96s, 20 segments) for Garret's "Twisted Candy"
 10. sugar_cloud — prop (3c8cb2bc679e4d11b8c183c106155762.jpg)
 11. gummy_bass — prop (a42cfd45f6194b50a543909565441ce2.jpg)
 
-Original sour_worms job (71fd5c78) completed with NO media — re-submitted (cf643c5d), landed fine.
+Original sour_worms job (71fd5c78) completed with NO media — re-submitted (cf643c5d), landed fine. A LATE second worm sheet landed via async job (fe0435a218a74b5692b45eb3a390e620.jpg) AFTER phase 04 closed — compared head-to-head vs 2141dd1a: rejected (inconsistent translucency between panels, mismatched facial proportions). reference_list unchanged.
+
+## Done: Phase 05a video prep (draft, not finalized)
+
+- video_prep v1 draft: /workspace/twisted_candy/video_prep.draft.json + artifact slot video_prep (version 1, draft).
+- 15 non-lipsync (seedance-2-0-mini, @imageN image_urls channel, no ARK) + 5 lipsync (dlai2v_pro, segs 04/07/08/13/16).
+- Self-check script (check_video_prep.py inline in turn): 20/20 pass — shot lines == shot_count, durations ceil'd, audio slices verified against segment_urls.json (6 shifted-by-one audio refs caught + fixed), lipsync prefix + per-shot lip-sync phrase + no cuts/placeholders + keyframes empty, non-lipsync mouth-closed clause + banned stillness words absent + style capper ≤15 words + all @imageN named.
+- Look mapping: rocker look_a (shades ON) for arena segs 01/02/04/07/12/19/20; look_b (shades OFF) for 08/13/16/17/18; seg_16 lipsync refs include gummy_army sheet (army parts for him).
+- NEXT: Phase 05b — read phases/05b-lipsync-keyframes/PHASE.md; generate 2-3 keyframes per lipsync seg (shot_count drives target_keyframe_count) via gpt-image-2, split, upload, backfill role=keyframe, finalize video_prep.
 
 ## Next: Phase 05a video prep
 
