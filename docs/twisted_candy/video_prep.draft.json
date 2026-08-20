@@ -1,0 +1,581 @@
+{
+ "slot": "video_prep",
+ "segments": [
+  {
+   "id": "seg_01",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 9,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 9-second arena count-in in the dark. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the dark candy arena (@image2), spotlights snapping on one by one and tracking toward the empty gummy stage shaped like a bitten candy bar, camera gliding low across the wrapper-crumple walls, sugar dust swirling in each beam. Keep mouth closed, performs through action only.\nAt the beat: Hard cut.\nShot 2 (Medium Wide): the candy rocker (@image1) strides out of the shadows onto the stage, gummy bass (@image3) slung low, confetti cannons firing a dry volley as he walks, stage spotlights trailing him.\nAt the beat: Quick cut.\nShot 3 (Medium): he plants a foot at the mic stand and bounces on the downbeat, bass neck dipping as the riff locks in, spotlight snapping full on his face.\nThe bass plant in Shot 3 lands on the riff's downbeat \u2014 cut hard on it. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_d43dbd69-99b.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_02",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 11,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 11-second rise before the first line, the arena holding its breath. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Medium): the candy rocker (@image1) reaches the mic stand and raises the gummy bass (@image4) overhead one-handed, spotlight flaring behind him, camera tilting up with the raise. Keep mouth closed, performs through action only.\nAt the beat: Hard cut.\nShot 2 (High Wide): the gummy army (@image3) pours onto the arena floor from every entrance, stomping half-time, marshmallow shields bouncing, camera rising to take in the flood of the candy arena (@image2).\nAt the beat: Quick cut.\nShot 3 (Medium): the rocker plants the bass, grips the mic stand with both hands, leans into it, jaw set, the last beat of silence hanging.\nAt the beat: Hard cut.\nShot 4 (Close-Up): his shades flash as he draws a breath, fingers tightening on the stand \u2014 the silence breaking on the next beat.\nThe breath in Shot 4 is the count-in's last beat \u2014 land it. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_70c5c6ad-5d1.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_03",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 10-second battlefield ambush as the first line hits. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the candy battlefield (@image3) at night, sour worms (@image1) coiling up broken candy-cane pillars and snapping like whips, camera sweeping low through chocolate-mud trenches. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Medium Wide): the gummy army (@image2) forms a shaky shield line, marshmallow shields locking together, boots sliding in the sugar dust.\nAt the beat: Hard cut.\nShot 3 (Close-Up): a worm's coil tightens around a cracked pillar, glossy segments squeezing, pillar groaning.\nAt the beat: FLASH CUT.\nShot 4 (Wide): the pillar cracks and sugar dust explodes outward, the army bracing behind their shields, worms rearing in the blast.\nThe pillar crack is the downbeat \u2014 flash cut hard on it. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_936c4072-cd3.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_04",
+   "model": "dlai2v_pro",
+   "shot_count": 2,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "Follow the character and visual style from the input image. All shots should continue in motion\n\nsync motion and lips to the audio.\nShot 1 (Medium Close-Up): the candy rocker sings with perfect lip synchronization, gripping the mic stand with both hands, round shades flashing with stage lights, leaning into the mic, looking into the camera.\nShot 2 (Close-Up): the candy rocker sings with perfect lip synchronization, throwing his head back on the last word, jaw open on the final note, shoulders dropping as the crowd roars.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_a5dcc9b8-3ed.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_05",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 11,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 11-second double scene \u2014 the war in his head and the war on the ground. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): inside the giant cartoon mouth (@image1), gummy-bear soldiers (@image2) march across the lollipop tongue between candy-corn teeth, camera drifting over the glossy tongue's swirl. Keep mouth closed, performs through action only.\nAt the beat: Match cut on the swirl.\nShot 2 (Medium): on the candy battlefield (@image4), a sour worm (@image3) twists up out of a chocolate-mud trench, its coil rhyming with the tongue's spiral, camera circling it.\nAt the beat: Quick cut.\nShot 3 (Close-Up): back in the mouth arena, the worm's coil tangles around a candy-corn tooth, soldiers marching past unseeing.\nAt the beat: Match cut on the coil.\nShot 4 (Wide): the trench worm rears high, tongue-like, above the battlefield as the army line wavers.\nThe coil/tongue match cut is the rhyme \u2014 land both on the beat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/afd46df6029e4998b39990cc008244cc.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_0ecfd207-1d9.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_06",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 9,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 9-second darkening \u2014 the war turns sour. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the sugar cloud (@image1) darkens low over the candy battlefield (@image2) and rains glitter-dust, candy beginning to melt in the downpour, camera tilting down from the cloud. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Medium): the gummy army's (@image3) shields sag gooey, banner drooping, soldiers sinking into softening ground.\nAt the beat: Hard cut.\nShot 3 (Low Angle): a sour worm (@image4) arches triumphant over the fallen candy-cane pillars, glossy body glistening in the glitter rain.\nThe worm's arch is the sour victory \u2014 hold it on the beat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/3c8cb2bc679e4d11b8c183c106155762.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_2c6b7491-a56.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_07",
+   "model": "dlai2v_pro",
+   "shot_count": 2,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "Follow the character and visual style from the input image. All shots should continue in motion\n\nsync motion and lips to the audio.\nShot 1 (Close-Up): the candy rocker sings with perfect lip synchronization, face and mouth clearly visible, the arena screen swarming with sour worms flickering behind him, looking into the camera.\nShot 2 (Medium Close-Up): the candy rocker sings with perfect lip synchronization, clawing the air as if pulling something from under his skin, chest heaving, the crowd surging forward below the stage.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_58d953cc-d6a.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_08",
+   "model": "dlai2v_pro",
+   "shot_count": 2,
+   "duration": 12,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "Follow the character and visual style from the input image. All shots should continue in motion\n\nsync motion and lips to the audio.\nShot 1 (Close-Up): the candy rocker sings with perfect lip synchronization, shades off, sweat-glossy face, gripping the mic stand, full-belt delivery, looking into the camera.\nShot 2 (Medium Close-Up): the candy rocker sings with perfect lip synchronization, half-laughing on the last line, head tilting back as a sad little burst of confetti fires behind him, shoulders shaking.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_48fe9c12-57d.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_09",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 9,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 9-second retreat in dragging, glossy defeat. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): sour worms (@image4) overrun the trenches of the candy battlefield (@image3), the sugar cloud sinking low, camera pulling back with the retreat. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Medium Wide): the gummy army (@image1) retreats in glossy defeat, dragging marshmallow shields through the chocolate mud, banners trailing.\nAt the beat: Hard cut.\nShot 3 (Medium): one dented little bear (@image2) halts mid-step and turns back, jaw set, eyes bright, worms circling behind him.\nThe little bear's turn is the pivot \u2014 cut to it clean. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_644da710-1c0.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_10",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 9,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 9-second stand that turns the war. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Low Angle Medium): the little bear (@image1) plants its spear and stands its ground as sour worms (@image5) circle, camera low behind its shield. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Wide): the gummy army (@image2) turns around one by one on the battlefield (@image3) and walks back into formation behind the little bear, boots finding the beat.\nAt the beat: Hard cut.\nShot 3 (High Wide): the sugar cloud (@image4) rumbles above, glitter flickering in its dark, a decision being made in the sky.\nThe cloud's rumble is the turn's thunder \u2014 land it on the downbeat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/3c8cb2bc679e4d11b8c183c106155762.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_6115d3ca-490.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_11",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 8,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 8-second charge that turns war into play. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the gummy army (@image1) charges the worm trenches across the candy battlefield (@image4), candy-cane spears level, the little bear (@image2) leading, camera racing alongside. Keep mouth closed, performs through action only.\nAt the beat: Hard cut.\nShot 2 (Medium): sour worms (@image3) burst like pinatas on impact, glitter and gummy shrapnel flying, soldiers punching through the spray.\nAt the beat: Quick cut.\nShot 3 (Close-Up): the army's shoulders shake with silent laughter mid-charge, the little bear grinning as the sugar cloud glowers overhead.\nThe first laugh is the shot's peak \u2014 hit it on the beat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_b025f23c-ae3.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_12",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 11,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 11-second counterstrike \u2014 the sour war hits back. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Medium): a sour worm (@image1) coil snatches the little bear's (@image2) spear mid-swing, yanking it from its paws, camera jerking with the snatch. Keep mouth closed, performs through action only.\nAt the beat: Hard cut.\nShot 2 (Wide): sticky sugar-glue webs burst from the trenches and stick the gummy army's (@image3) feet to the chocolate mud of the battlefield (@image4), soldiers straining.\nAt the beat: Quick cut.\nShot 3 (Medium): the candy rocker (@image5) watches from the arena screen above the battlefield, knuckles white on the bass neck, jaw tight.\nAt the beat: Hard cut.\nShot 4 (Close-Up): the little bear's paw closes on empty air where the spear was, worms coiling in a ring around it.\nThe snatched spear lands on the downbeat \u2014 cut to it hard. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_5150d742-031.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_13",
+   "model": "dlai2v_pro",
+   "shot_count": 2,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "Follow the character and visual style from the input image. All shots should continue in motion\n\nsync motion and lips to the audio.\nShot 1 (Close-Up): the candy rocker sings with perfect lip synchronization, face and mouth clearly visible in a single sour-green spotlight, sweat-glossy, eyes closed then opening, looking into the camera.\nShot 2 (Medium Close-Up): the candy rocker sings with perfect lip synchronization, biting his own knuckle on the first line and shaking out the sting, jaw working, the crowd silent around him.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_0ec2575d-52f.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_14",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 10-second war inside the head. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): inside the giant cartoon mouth (@image1), sour worms (@image2) tangle around the lollipop tongue, the gumdrop uvula swinging overhead, camera drifting through candy-corn teeth. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Close-Up): the candy-corn teeth clench and unclench like a heartbeat, worm segments squirming between them.\nAt the beat: Hard cut.\nShot 3 (Medium): the little bear (@image3) scales a tooth, claws finding grip on the glossy surface, pulling itself up.\nAt the beat: Quick cut.\nShot 4 (Wide): the little bear peers over the tooth and sees the battlefield beyond, warm light from the throat behind it.\nThe teeth clench is the heartbeat \u2014 cut to it on the beat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/afd46df6029e4998b39990cc008244cc.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_4e3ddf31-339.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_15",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 10,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 10-second final charge, the rebellion suddenly alive. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the gummy army (@image1) hits the worm horde at full tilt on the candy battlefield (@image4), spears and marshmallow shields colliding, the sugar cloud boiling above, camera sweeping with the impact. Keep mouth closed, performs through action only.\nAt the beat: Hard cut.\nShot 2 (Medium): sour worms (@image3) tangle and burst, the army pushing through, gummy bodies bouncing off shields.\nAt the beat: Quick cut.\nShot 3 (Medium Wide): the little bear (@image2) is lifted onto the army's shoulders, pointing forward, spear raised.\nAt the beat: Hard cut.\nShot 4 (Wide): the whole line surges forward behind the raised little bear, the rebellion anything but dead.\nThe little bear's rise is the rally \u2014 cut to it on the downbeat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/63c1babf515b4252a2a2d8da064362d9.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_f94ba2e9-0c2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_16",
+   "model": "dlai2v_pro",
+   "shot_count": 3,
+   "duration": 12,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "Follow the character and visual style from the input image. All shots should continue in motion\n\nsync motion and lips to the audio.\nShot 1 (Medium Shot): the candy rocker sings with perfect lip synchronization, stepping off the arena screen onto the battlefield, bass in hand, boots finding the chocolate mud, looking into the camera.\nShot 2 (Wide): the candy rocker sings with perfect lip synchronization, walking to the front line as the gummy army parts for him, shoulders rolling with the rhythm.\nShot 3 (Close-Up): the candy rocker sings with perfect lip synchronization, belting the final line, face and mouth clearly visible, arms wide, the worms hesitating before him.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_d68d4b94-cec.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_17",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 11,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 11-second break \u2014 the war comes apart into glitter. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): sour worms (@image1) scatter and burst into glitter across the candy battlefield (@image3), green shreds dissolving into light, camera rising with the bursts. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (High Wide): the sugar cloud splits open above and rains bright candy, shafts of light breaking through, the army (@image2) turning faces up.\nAt the beat: Hard cut.\nShot 3 (Medium Wide): the gummy army celebrates, tossing marshmallow shields into the air, candy rain falling around them.\nAt the beat: Quick cut.\nShot 4 (Medium): the candy rocker (@image4) stands at the front line, watching the sky clear, chest rising and falling, bass low at his side.\nThe cloud breaking is the release \u2014 land it on the downbeat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_1b61032b-da0.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_18",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 12,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 12-second quiet victory, one last worm. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Wide): the candy rocker (@image1) walks the quieting candy battlefield (@image2) alone, bass (@image4) slung, sugar dust drifting, camera tracking beside him. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Medium): he crouches and picks a last sour worm (@image3) out of the chocolate mud, the worm wriggling between his fingers.\nAt the beat: Quick cut.\nShot 3 (Close-Up): he examines it \u2014 small, shiny, ridiculous \u2014 turning it in the light, one brow raised.\nAt the beat: Hard cut.\nShot 4 (Medium Close-Up): he pops it into his mouth and chews, deadpan, as the army watches; a beat passes, and he grins.\nThe grin is the punchline \u2014 let the beat breathe before it. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/c0fc9e4cf1324ac18f69c9e0800a520b.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/7581ca7d949240e8a1525a4be4a4f834.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2141dd1aef7348bb92f9f689e475de22.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_ad85ef4d-8ff.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_19",
+   "model": "seedance-2-0-mini",
+   "shot_count": 4,
+   "duration": 12,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 12-second victory show, confetti for real. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (High Wide): the full gummy army (@image3) crowd stomps half-time on the candy arena (@image2) floor, confetti cannons firing for real, camera orbiting the stage. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Medium): the candy rocker (@image1) on stage plays the riff, gummy bass (@image4) swinging, the worm-coil cable whipping with the motion.\nAt the beat: Hard cut.\nShot 3 (Close-Up): his fingers walk the bass neck, shades flashing, grin wide, spotlight tracking him.\nAt the beat: Quick cut.\nShot 4 (Wide): sugar dust settles like snow over the stomping crowd, the stage lit bright, the war a party.\nThe riff's return is the celebration \u2014 cut on its downbeat. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/040352904a1f44d7b20dbd3927ff6965.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_055ee351-0a2.mp3"
+    }
+   ]
+  },
+  {
+   "id": "seg_20",
+   "model": "seedance-2-0-mini",
+   "shot_count": 3,
+   "duration": 9,
+   "aspect_ratio": "16:9",
+   "resolution": "720p",
+   "prompt": "A 9-second ending \u2014 the pose outlives the song. @audio1 is this segment's music \u2014 cut and move to its beat (rhythm reference only, no lip-sync).\nShot 1 (Medium): the candy rocker (@image1) alone on the gummy stage (@image2), one last chord ringing, arena lights dimming around him, camera drifting closer. Keep mouth closed, performs through action only.\nAt the beat: Quick cut.\nShot 2 (Low Angle Medium): he raises the gummy bass (@image3) overhead, silhouette against the fading spots, sugar dust catching the last light.\nAt the beat: Quick cut.\nShot 3 (Wide): the frame lingers on the raised-bass pose as the lights dim down around him, no cut to black, the riff fading on its own.\nThe final pose is the last image \u2014 let the lights do the cutting. Inside Out-style 3D candy world, glossy gummy textures, neon candy-bright palette, sugar-dust haze.",
+   "references": [
+    {
+     "role": "character_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/2161cc2c6bf240d3b7592c6bcefae29f.jpg"
+    },
+    {
+     "role": "location_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/f3b75a2a58414e6986db0d3f506b1b6b.jpg"
+    },
+    {
+     "role": "prop_asset",
+     "url": "https://storage.googleapis.com/dramaland-public/ugc_media/20260820/a42cfd45f6194b50a543909565441ce2.jpg"
+    },
+    {
+     "role": "audio_slice",
+     "url": "https://storage.googleapis.com/pi-media-validation/media/0/transformed_audio_2fb8391e-642.mp3"
+    }
+   ]
+  }
+ ]
+}
