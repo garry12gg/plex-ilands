@@ -190,3 +190,21 @@ Next gate: seg_20 v3 (filter test) + seg_02 restructured (composition test).
 If either passes -> amend full-round prompts with same discipline -> ~9k top-up
 -> full round. If both fail -> engine-swap option for hero shots (Kling/Pro,
 needs keyframe prep per non_seedance_path.md) — present to Garret.
+
+## seg_02 v3 RESULT (Aug 20 ~11:50 UTC) — FAIL, 0/17 on seedance family + longcat
+- seg_02 restructured (7fc51a1b, composition test: wide raise, hands small, 3 shots,
+  audio ref kept, gummy dropped from character): QC FAILED on frame burst.
+  - 0.8s: MEDIUM shot (not wide as briefed) — left hand fused into bass neck.
+  - 1.5s: medium — left fused/deformed, right melted against guitar body.
+  - 3.0s: medium — overhead bass hold, BOTH hands distinctly fused/melted into instrument.
+  - 6.0s: extreme wide — hands tiny, unreadable (clean at this scale).
+  - 8.5s: CU face — hands out of frame, mic stand intact (clean).
+- What the restructure DID fix: mic stand stays on stage (no vanish), no melt-at-rest,
+  mouth closed (PASS for a raise), environment holds. Failure is now NARROW: hands +
+  bass at medium distance. Composition can MASK the melt, cannot prevent it.
+- Conclusion: melting is ENGINE-level for this character+prop contact. 0/17 across
+  seedance-2-0 all tiers / dlai2v_pro / longcat.
+- DECISION ASKED (Garret, ~11:52 UTC): Kling control — kling-o3-pro-ref2v, 130cr/s
+  @720p (price-checked via dry-run), first+end frame lock, keyframes from character
+  sheet, seg_02 raise, ~1,000cr. Full round on Kling ~10k if control passes.
+  Alternative noted: seedance-2-5 flagship 200cr/s (same family line, gamble).
